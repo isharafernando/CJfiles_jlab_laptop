@@ -1,0 +1,288 @@
+#include <MUSEteleTracker.h>
+
+//#include "cTrack.h"
+
+#include<iostream>
+#include<cmath>
+
+
+MUSEteleTracker::MUSEteleTracker(TTree *in, TTree *out,TFile *inf_, TFile * outf_, TObject *p):Plugin(in,out,inf_,outf_,p)
+{
+}
+
+MUSEteleTracker::~MUSEteleTracker()
+{
+}
+
+Long_t MUSEteleTracker::defineHistograms()
+{
+  return Plugin::ok;
+}
+
+Long_t MUSEteleTracker::startup()
+{
+  // get input branch with GEM clusters:
+  clusters=NULL;
+  getBranchObject("LumiGEMhits", (TObject**)&clusters);
+  if (clusters==NULL)
+    {
+      printf(" Cannot find branch >LumiGEMhits< in input ROOT file - bailing out!\n");
+      return -1;
+    };
+  printf(" LumiGEMhits (clusters) @%p\n", clusters);
+
+  // create output branch with tracks:
+  teletracks = new TeleTracks();
+  makeBranch("teletracks", (TObject**)&teletracks);
+  printf(" teletracks %p\n", teletracks);
+
+  return Plugin::ok;
+}
+
+Long_t MUSEteleTracker::process()
+{
+  char leftright[2][18] = {"downstream", "upstream"};
+  // loop over both telescopes:
+  for (int t=1; t<2; t++)
+    {
+      // initialize an "empty" straight track:
+      StraightTrack aTrack;
+
+       aTrack.x0 = 0.0;
+      aTrack.y0 = 0.0;
+      aTrack.z0 = 0.0;
+      aTrack.x1 = 0.0;
+      aTrack.y1 = 0.0;
+      aTrack.z1 = 0.0;
+      aTrack.x2 = 0.0;
+      aTrack.y2 = 0.0;
+      aTrack.z2 = 0.0;
+      aTrack.mx = 0.0;
+      aTrack.my = 0.0;
+      aTrack.xresidua.clear();
+      aTrack.yresidua.clear();
+      aTrack.z.clear();
+
+      // vector to store all track candidates for this event:
+      std::vector <StraightTrack> TrackCands;
+      std::vector <int>           whichclusters[3];
+      std::vector <double>        chi2;
+
+      // loop over all possible combinations of clusters:
+      int combmulti=0, combmulti_cut=0;
+      TrackCands.clear();
+      chi2.clear();
+      int gemmulti[3] = { 0, 0, 0 };
+      for (unsigned int g1=0; g1<clusters->hits.size(); g1++)
+	{
+	  if (clusters->hits[g1].GEMid!=t*3+0) continue;
+	  gemmulti[0]++;
+	  for (unsigned int g2=0; g2<clusters->hits.size(); g2++)
+	    {
+	      if (clusters->hits[g2].GEMid!=t*3+1) continue;
+	      gemmulti[1]++;
+	      for (unsigned int g3=0; g3<clusters->hits.size(); g3++)
+		{
+		  if (clusters->hits[g3].GEMid!=t*3+2) continue;
+		  gemmulti[2]++;
+		};
+	    };
+	};
+      //printf("tele %d: #clusters US: %d MI: %d DS: %d \n", t, gemmulti[0], gemmulti[1], gemmulti[2]);
+      if (gemmulti[0]*gemmulti[1]*gemmulti[2]>200) continue; //return Plugin::ok;
+      H1(gemmulti[0], Form("MUSEteleTracker/%s_gemmultiUS", leftright[t]), Form("Multiplicity %s US GEM", leftright[t]),
+	 50, -0.5, 49.5);
+      H1(gemmulti[1], Form("MUSEteleTracker/%s_gemmultiMI", leftright[t]), Form("Multiplicity %s MI GEM", leftright[t]),
+	 50, -0.5, 49.5);
+      H1(gemmulti[2], Form("MUSEteleTracker/%s_gemmultiDS", leftright[t]), Form("Multiplicity %s DS GEM", leftright[t]),
+	 50, -0.5, 49.5);
+
+      // I put in the z coordinates of the GEM detectors as they were in OLYMPUS
+      // (should not have changed much. They are only needed for the relative
+      // distances in z here.
+      const double zgem[2][3] = 
+     	{ 1846.2, 2180.3, 2600.7,    // OLYMPUS, left sector GEMs
+	  1840.7, 1965.7, 2090.7  }; // OLYMPUS, right sector GEMs // use at PSI
+      // 1840.7, 2176.5, 2597.2  }; // OLYMPUS, right sector GEMs // use at PSI
+
+      double dx, dy;
+      dx=0.0;
+      dy=0.0;
+  double x[3]={0.0,0.0,0.0};
+      double y[3]={0.0,0.0,0.0};
+      //    printf("start one\n");
+      for (unsigned int g1=0; g1<clusters->hits.size(); g1++)
+	{
+	  if (clusters->hits[g1].GEMid!=t*3+0) continue;
+	  for (unsigned int g2=0; g2<clusters->hits.size(); g2++)
+	    {
+	      if (clusters->hits[g2].GEMid!=t*3+1) continue;
+	      for (unsigned int g3=0; g3<clusters->hits.size(); g3++)
+		{
+		  if (clusters->hits[g3].GEMid!=t*3+2) continue;
+		  combmulti++;
+		  // calculate MI GEM residua in x and y:
+		  //const double zgem[3] = { 1846.2, 2180.3, 2600.7 }; // OLYMPUS, left sector GEMs
+		  // cTrack myTrack = new cTrack(2);
+		  // myTrack->SetPoint(0, clusters->hits[g1].xl*0.4-50., clusters->hits[g1].yl*0.4-50., zgem[0]);
+		  // myTrack->SetPoint(2, clusters->hits[g3].xl*0.4-50., clusters->hits[g3].yl*0.4-50., zgem[2]);
+		  // myTrack->CalculateTrajectory();
+		  // myTrack->DistanceInXYPlane(clusters->hits[g2].xl*0.4-50., clusters->hits[g2].yl*0.4-50., zgem[1],
+		  // coordinates of clusters in each GEM in mm:
+
+  double x[3]={0.0,0.0,0.0};
+      double y[3]={0.0,0.0,0.0};
+    dx=0.0;
+      dy=0.0;
+		  x[0] = clusters->hits[g1].xl*0.4-50.; y[0] = clusters->hits[g1].yl*0.4-50.;
+		  x[1] = clusters->hits[g2].xl*0.4-50.; y[1] = clusters->hits[g2].yl*0.4-50.;
+		  x[2] = clusters->hits[g3].xl*0.4-50.; y[2] = clusters->hits[g3].yl*0.4-50.;
+
+		  // estimate cluster coordinates in middle GEM from US and DS GEM data:
+		  double slopex = (x[2]-x[0])/(zgem[t][2]-zgem[t][0]);
+		  double slopey = (y[2]-y[0])/(zgem[t][2]-zgem[t][0]);
+		  //printf("x[2],x[0],slope: %f, %f, %f\n",x[2],x[0],slopex);
+		  //printf("y[2],y[0],slope: %f, %f, %f\n",y[2],y[0],slopey);
+		  double X = slopex*(zgem[t][1]-zgem[t][0])+x[0];
+		  double Y = slopey*(zgem[t][1]-zgem[t][0])+y[0];
+		  // distance between etsimate and real cluster position in middle GEM:
+		  dx = clusters->hits[g2].xl*0.4-50. - X;
+		  dy = clusters->hits[g2].yl*0.4-50. - Y;
+		  // histogram results:
+		  H1(dx, Form("MUSEteleTracker/%s_dx", leftright[t]), Form("%s dx", leftright[t]), 1024, -100., +100.);
+		  H1(dy, Form("MUSEteleTracker/%s_dy", leftright[t]), Form("%s dy", leftright[t]), 1024, -100., +100.);
+		  // store this track candidate if residua make somewhat sense:
+		 
+		  if ( (fabs(dx)>10.0)||fabs(dy)>10.0 ) continue;
+		  //printf("dx and dy of this track: %f, %f\n",dx, dy);
+		  H1(dx, Form("MUSEteleTracker/%s_dx_cut", leftright[t]), Form("%s dx_cut", leftright[t]), 1024, -100., +100.);
+		  H1(dy, Form("MUSEteleTracker/%s_dy_cut", leftright[t]), Form("%s dy_cut", leftright[t]), 1024, -100., +100.);
+		  combmulti_cut++;
+
+		  whichclusters[0].push_back(g1);
+		  whichclusters[0].push_back(g2);
+		  whichclusters[0].push_back(g3);
+		  aTrack.telescope = t;
+		  aTrack.x0 = x[0];
+		  aTrack.y0 = y[0];
+		  aTrack.z0 = zgem[t][0];
+		  aTrack.x1 = x[1];
+		  aTrack.y1 = y[1];
+		  aTrack.z1 = zgem[t][1];
+		  aTrack.x2 = x[2];
+		  aTrack.y2 = y[2];
+		  aTrack.z2 = zgem[t][2];
+		  aTrack.mx = slopex;
+		  aTrack.my = slopey;
+		  aTrack.xresidua.push_back(dx);
+		  aTrack.yresidua.push_back(dy);
+		  aTrack.z.push_back(zgem[t][1]);
+		  TrackCands.push_back(aTrack);
+		  //   printf("before thischi2:  %d,  %d, %d,  %5.3lf, %5.3lf\n",g1,g2,g3,slopex*(277.5)+x[0],slopey*(277.5)+y[0]);
+		  //  printf("before thischi2:  %d,  %d, %d,  %5.3lf, %5.3lf\n",g1,g2,g3,dx,dy);
+
+		  double thischi2 = 0.0;
+		  for (unsigned int j=0; j<aTrack.xresidua.size(); j++){
+		    thischi2 = pow(aTrack.xresidua[j], 2.) + pow(aTrack.yresidua[j], 2.);
+		    // printf("after thischi2:  %d,  %d, %d,  %d, %5.3lf, %5.3lf,%5.3lf,%5.3lf\n",g1,g2,g3,j, aTrack.xresidua[j],aTrack.yresidua[j],pow(aTrack.xresidua[j], 2.) + pow(aTrack.yresidua[j], 2.),thischi2);
+		  };
+		  chi2.push_back(thischi2);
+		  //  printf("even after thischi2:  %d,  %d, %d,  %5.3lf\n",g1,g2,g3,thischi2);	 
+		};
+	    };
+	};
+      H1(combmulti, Form("MUSEteleTracker/%s_CombinationMulti", leftright[t]),
+	 Form("%s combination multiplicity", leftright[t]), 1000, -0.5, 999);
+      H1(combmulti_cut, 
+	 Form("MUSEteleTracker/%s_CombinationMulti_cut", leftright[t]),
+	 Form("%s combination multiplicity cut", leftright[t]), 1000, -0.5, 999);
+
+      if (TrackCands.size()==0) continue; //return Plugin::ok;
+
+      // loop over all track candidates and select the best one(s):
+      int best       = 0;
+      int secondbest = 0;
+
+      //printf(" %d chisquares to compare:\n", chi2.size());
+      for (unsigned int i=0; i<TrackCands.size(); i++)
+	{
+	  //printf(" %lf < %lf ?\n", chi2[i], chi2[best]);
+	  if (chi2[i]<chi2[best])
+	    {
+	      secondbest = best;
+	      best = i;
+	    };
+	  //  printf("%d is better then %d and %d\n", i, best, secondbest);
+
+	  if ((best==secondbest)&&(i==1))
+	    secondbest = i;
+
+	  // printf("%d is better then %d for all %d and %5.3lf\n",best,secondbest, i, chi2[i]);
+	};
+
+      teletracks->tracks.clear();
+      aTrack = TrackCands[best];
+      // aTrack.xresidua = TrackCands[best].xresidua;
+      // aTrack.yresidua = TrackCands[best].yresidua;
+      for (unsigned int i=0; i<TrackCands[best].xresidua.size(); i++)
+	{
+	  aTrack.xresidua.push_back(TrackCands[best].xresidua[i]);
+	  aTrack.yresidua.push_back(TrackCands[best].yresidua[i]);
+	  aTrack.z.push_back(TrackCands[best].z[i]);
+	};
+      teletracks->tracks.push_back(aTrack);
+      unsigned int thissize = teletracks->tracks.size();
+      //printf(" teletracks->tracks.xresidua.size() = %d\n", teletracks->tracks[thissize-1].xresidua.size());
+
+      x[0] = aTrack.x0;
+      y[0] = aTrack.y0;
+      x[1] = x[0] + aTrack.mx * (zgem[t][1]-zgem[t][0]);
+      y[1] = y[0] + aTrack.my * (zgem[t][1]-zgem[t][0]);
+      x[2] = x[0] + aTrack.mx * (zgem[t][2]-zgem[t][0]);
+      y[2] = y[0] + aTrack.my * (zgem[t][2]-zgem[t][0]);
+
+      H2(x[0], y[0], Form("%s_HitmapUS", leftright[t]), Form("Hitmap %s US GEM", leftright[t]), 100, -50., +50., 100, -50., +50.);
+      H2(x[1], y[1], Form("%s_HitmapMI", leftright[t]), Form("Hitmap %s MI GEM", leftright[t]), 100, -50., +50., 100, -50., +50.);
+      H2(x[2], y[2], Form("%s_HitmapDS", leftright[t]), Form("Hitmap %s DS GEM", leftright[t]), 100, -50., +50., 100, -50., +50.);
+
+      H1(chi2[best], Form("%s_chi2", leftright[t]), Form("%s chi2", leftright[t]), 1000., 0., 100.);
+      if (best!=secondbest)
+	H1(chi2[secondbest], Form("%s_2ndchi2", leftright[t]), Form("%s 2ndchi2", leftright[t]), 1000., 0., 100.);
+
+      if (secondbest!=best)
+	{
+	  aTrack = TrackCands[secondbest];
+	  aTrack.xresidua = TrackCands[secondbest].xresidua;
+	  aTrack.yresidua = TrackCands[secondbest].yresidua;
+	  teletracks->tracks.push_back(aTrack);
+	};
+      //  teletracks->tracks.push_back(aTrack);
+    }; // for (t) // loop over telescopes
+
+  return Plugin::ok;
+}
+
+Long_t MUSEteleTracker::finalize()
+{
+  return Plugin::ok;
+}
+
+
+Long_t MUSEteleTracker::cmdline(char *cmd)
+{
+  //add cmdline handling here
+
+  return 0; // 0 = all ok
+}
+
+
+extern "C"{
+Plugin *factory(TTree *in, TTree *out,TFile *inf_, TFile * outf_, TObject *p)
+{
+  return (Plugin *) new MUSEteleTracker(in,out,inf_,outf_,p);
+}
+}
+
+
+ClassImp(MUSEteleTracker);
+

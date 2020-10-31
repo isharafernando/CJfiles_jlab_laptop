@@ -1,0 +1,827 @@
+ Correlated errors added in quadrature with statistical errors
+ jl00106F2p           DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors added in quadrature with statistical errors
+ jl00106F2d           DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   WBArel smearing  (AV18) - KP-like (baryon conserv.)0 nuke corrections
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors added in quadrature with statistical errors
+ HerF2pCut            DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors added in quadrature with statistical errors
+ HerF2dCut            DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   WBArel smearing  (AV18) - KP-like (baryon conserv.)0 nuke corrections
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors added in quadrature with statistical errors
+ slac_p               DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors added in quadrature with statistical errors
+ slac_d               DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   WBArel smearing  (AV18) - KP-like (baryon conserv.)0 nuke corrections
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ BcdF2pCor            DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ BcdF2dCor            DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   WBArel smearing  (AV18) - KP-like (baryon conserv.)0 nuke corrections
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ NmcF2pCor            DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ NmcRatCor            DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   WBArel smearing  (AV18) - KP-like (baryon conserv.)0 nuke corrections
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ H2_NC_em             DIS data with   1.69< Q2 < 0.100D+06 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+08 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ H2_NC_ep_1           DIS data with   1.69< Q2 < 0.100D+06 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+08 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ H2_NC_ep_2           DIS data with   1.69< Q2 < 0.100D+06 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+08 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ H2_NC_ep_3           DIS data with   1.69< Q2 < 0.100D+06 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+08 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ H2_NC_ep_4           DIS data with   1.69< Q2 < 0.100D+06 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+08 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ H2_CC_em             DIS data with   1.69< Q2 < 0.100D+06 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+08 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ H2_CC_ep             DIS data with   1.69< Q2 < 0.100D+06 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+08 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors added in quadrature with statistical errors
+ BNS_F2nd             DIS data with   1.69< Q2 < 0.100D+06 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+08 and 0.000 < y < 1.000
+   WBArel smearing  (AV18) - KP-like (baryon conserv.)0 nuke corrections
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors added in quadrature with statistical errors
+ e866pp06xf           vector boson data with Q2 >=  36.00
+ Correlated errors added in quadrature with statistical errors
+ e866pd06xf           vector boson data with Q2 >=  36.00
+ Correlated errors added in quadrature with statistical errors
+ cdfLasy05            vector boson data with Q2 >=   0.00
+ Correlated errors added in quadrature with statistical errors
+ d0Lasy_e15           vector boson data with Q2 >=   0.00
+ Correlated errors added in quadrature with statistical errors
+ d0Lasy13             vector boson data with Q2 >=   0.00
+ Correlated errors added in quadrature with statistical errors
+ CDF_Wasy             vector boson data with Q2 >=   0.00
+ Correlated errors added in quadrature with statistical errors
+ D0_Wasy              vector boson data with Q2 >=   0.00
+ Correlated errors added in quadrature with statistical errors
+ CDF_Z                vector boson data with Q2 >=   0.00
+ Correlated errors added in quadrature with statistical errors
+ D0_Z                 vector boson data with Q2 >=   0.00
+ Correlated errors added in quadrature with statistical errors
+ d0run2cone          Jet data - errors added in quadrature
+ Correlated errors added in quadrature with statistical errors
+ CDFrun2jet          Jet data - errors added in quadrature
+ Correlated errors added in quadrature with statistical errors
+ d0_gamjet1           Photon data -- cuts to be written yet ...
+ Correlated errors added in quadrature with statistical errors
+ d0_gamjet2           Photon data -- cuts to be written yet ...
+ Correlated errors added in quadrature with statistical errors
+ d0_gamjet3           Photon data -- cuts to be written yet ...
+ Correlated errors added in quadrature with statistical errors
+ d0_gamjet4           Photon data -- cuts to be written yet ...
+
+# fitpack15: fit output
+# CJ15 AV18 final data choices                                                 
+
+Parametrization   7 used here
+
+ S-ACOT scheme used  for NC DIS
+
+ charm mass =     1.30 GeV     bottom mass =     4.50 GeV
+
+
+
+ THIS IS A NEXT TO LEADING ORDER FIT
+
+ Q02=    1.69
+         1  LAMBDA      VALUE=   0.22680      WEIGHT=    0.0000    
+         2  a0uv        VALUE=    2.4011      WEIGHT=    0.0000    
+         3  a1uv        VALUE=   0.61466      WEIGHT=   0.19856E-01
+         4  a2uv        VALUE=    3.5411      WEIGHT=   0.12414E-01
+         5  a3uv        VALUE=    0.0000      WEIGHT=    0.0000    
+         6  a4uv        VALUE=    3.4611      WEIGHT=   0.42903    
+         7  a5uv        VALUE=    0.0000      WEIGHT=    0.0000    
+         8  a0dv        VALUE=    25.370      WEIGHT=    0.0000    
+         9  a1dv        VALUE=    1.1646      WEIGHT=   0.33533E-01
+        10  a2dv        VALUE=    6.5431      WEIGHT=   0.15936    
+        11  a3dv        VALUE=   -3.5210      WEIGHT=   0.86332E-01
+        12  a4dv        VALUE=    4.6746      WEIGHT=   0.14209    
+        13  a5dv        VALUE=    0.0000      WEIGHT=    0.0000    
+        14  a0ud        VALUE=   0.14695      WEIGHT=   0.50348E-02
+        15  a1ud        VALUE=  -0.20715      WEIGHT=   0.37551E-02
+        16  a2ud        VALUE=    8.3296      WEIGHT=   0.19114    
+        17  a3ud        VALUE=    0.0000      WEIGHT=    0.0000    
+        18  a4ud        VALUE=    14.606      WEIGHT=    1.2151    
+        19  a5ud        VALUE=    0.0000      WEIGHT=    0.0000    
+        20  a0du        VALUE=    35712.      WEIGHT=    0.0000    
+        21  a1du        VALUE=    4.0309      WEIGHT=   0.74070E-01
+        22  a2du        VALUE=    20.154      WEIGHT=   0.87862    
+        23  a3du        VALUE=    17.000      WEIGHT=    0.0000    
+        24  a4du        VALUE=    51.156      WEIGHT=    10.239    
+        25  a0g         VALUE=    42.945      WEIGHT=    0.0000    
+        26  a1g         VALUE=   0.58911      WEIGHT=   0.31164E-01
+        27  a2g         VALUE=    6.4799      WEIGHT=   0.96748    
+        28  a3g         VALUE=   -3.2941      WEIGHT=   0.13418    
+        29  a4g         VALUE=    3.1809      WEIGHT=   0.31376    
+        30  a5g         VALUE=    0.0000      WEIGHT=    0.0000    
+        31  kappa       VALUE=   0.40000      WEIGHT=    0.0000    
+        32  a6dv        VALUE=  -0.31822E-02  WEIGHT=   0.66324E-03
+        33  a7dv        VALUE=    2.0000      WEIGHT=    0.0000    
+        34  off1        VALUE=   -3.6735      WEIGHT=    1.5278    
+        35  off2        VALUE=   0.59075E-01  WEIGHT=   0.14842E-01
+        36  ht1         VALUE=   -3.2891      WEIGHT=   0.26061    
+        37  ht2         VALUE=    1.9192      WEIGHT=   0.10524    
+        38  ht3         VALUE=   -2.0665      WEIGHT=   0.19888E-01
+        39  ht4         VALUE=    0.0000      WEIGHT=    0.0000    
+        40  dummy40     VALUE=    0.0000      WEIGHT=    0.0000    
+        41  dummy41     VALUE=    0.0000      WEIGHT=    0.0000    
+        42  dummy42     VALUE=    0.0000      WEIGHT=    0.0000    
+        43  dummy43     VALUE=    0.0000      WEIGHT=    0.0000    
+        44  dummy44     VALUE=    0.0000      WEIGHT=    0.0000    
+        45  dummy45     VALUE=    0.0000      WEIGHT=    0.0000    
+        46  dummy46     VALUE=    0.0000      WEIGHT=    0.0000    
+        47  dummy47     VALUE=    0.0000      WEIGHT=    0.0000    
+        48  dummy48     VALUE=    0.0000      WEIGHT=    0.0000    
+        49  dummy49     VALUE=    0.0000      WEIGHT=    0.0000    
+        50  bcdmsh2     VALUE=   0.97307      WEIGHT=   0.48289E-02
+        51  bcdmsd2     VALUE=   0.99317      WEIGHT=   0.58269E-02
+        52  ccfr        VALUE=    1.0000      WEIGHT=    0.0000    
+        53  nutev       VALUE=    1.0000      WEIGHT=    0.0000    
+        54  zeus        VALUE=   0.97998      WEIGHT=    0.0000    
+        55  h1          VALUE=    1.0162      WEIGHT=    0.0000    
+        56  e605        VALUE=    1.0319      WEIGHT=    0.0000    
+        57  NmcH2       VALUE=    1.0095      WEIGHT=   0.71247E-02
+        58  ntv_nu      VALUE=    1.0000      WEIGHT=    0.0000    
+        59  ntv_nubar   VALUE=    1.0000      WEIGHT=    0.0000    
+        60  cdf_jet     VALUE=   0.98910      WEIGHT=    0.0000    
+        61  d0_jet      VALUE=   0.83504      WEIGHT=    0.0000    
+        62  slac_p      VALUE=    1.0049      WEIGHT=   0.48124E-02
+        63  slac_d      VALUE=    1.0042      WEIGHT=   0.52781E-02
+        64  e866pp      VALUE=   0.96586      WEIGHT=   0.19263E-01
+        65  e866pd      VALUE=   0.96369      WEIGHT=   0.15783E-01
+        66  d0_gamjet   VALUE=    1.0389      WEIGHT=   0.16474E-01
+        67  h1b         VALUE=   0.97608      WEIGHT=    0.0000    
+        68  jlab_p      VALUE=   0.99446      WEIGHT=   0.57943E-02
+        69  jlab_d      VALUE=   0.97557      WEIGHT=   0.59019E-02
+        70  blank       VALUE=    1.0000      WEIGHT=    0.0000    
+        71  d0run2      VALUE=   0.94087      WEIGHT=   0.14167E-01
+        72  cdfrun2     VALUE=   0.92649      WEIGHT=   0.17233E-01
+        73  HERA_el     VALUE=    1.0000      WEIGHT=    0.0000    
+        74  HERA_ps     VALUE=    1.0000      WEIGHT=    0.0000    
+        75  CDF_Z       VALUE=   0.96581      WEIGHT=   0.64944E-02
+        76  NmcRat      VALUE=    1.0000      WEIGHT=    0.0000    
+        77  BNS_F2nd    VALUE=   0.98310      WEIGHT=   0.68314E-02
+        78  HERMES_F2p  VALUE=   0.99832      WEIGHT=   0.55693E-02
+        79  HERMES_F2d  VALUE=   0.98039      WEIGHT=   0.58259E-02
+0THE TOLERANCE IS    0.1000
+ THE MAXIMUM NUMBER OF STEPS IS 100
+0THE INITIAL CHI SQUARED IS  4.71247E+03
+0  STEP  CHI SQUARED    PARAMETER      VALUE         ERROR
+ ------------------------------------------------------------
+     1    4.71096E+03
+                       1  LAMBDA     2.2680E-01       FIX 
+                       2  a0uv       2.3945E+00       FIX 
+                       3  a1uv       6.1417E-01           
+                       4  a2uv       3.5431E+00           
+                       5  a3uv       0.0000E+00       FIX 
+                       6  a4uv       3.4836E+00           
+                       7  a5uv       0.0000E+00       FIX 
+                       8  a0dv       2.5116E+01       FIX 
+                       9  a1dv       1.1632E+00           
+                      10  a2dv       6.5591E+00           
+                      11  a3dv      -3.5107E+00           
+                      12  a4dv       4.6761E+00           
+                      13  a5dv       0.0000E+00       FIX 
+                      14  a0ud       1.4673E-01           
+                      15  a1ud      -2.0762E-01           
+                      16  a2ud       8.3057E+00           
+                      17  a3ud       0.0000E+00       FIX 
+                      18  a4ud       1.4520E+01           
+                      19  a5ud       0.0000E+00       FIX 
+                      20  a0du       3.5712E+04       FIX 
+                      21  a1du       4.0310E+00           
+                      22  a2du       2.0142E+01           
+                      23  a3du       1.7000E+01       FIX 
+                      24  a4du       5.1941E+01           
+                      25  a0g        4.5771E+01       FIX 
+                      26  a1g        6.0348E-01           
+                      27  a2g        6.5581E+00           
+                      28  a3g       -3.3040E+00           
+                      29  a4g        3.1786E+00           
+                      30  a5g        0.0000E+00       FIX 
+                      31  kappa      4.0000E-01       FIX 
+                      32  a6dv      -3.4695E-03           
+                      33  a7dv       2.0000E+00       FIX 
+                      34  off1      -3.6371E+00           
+                      35  off2       6.3423E-02           
+                      36  ht1       -3.3170E+00           
+                      37  ht2        1.9341E+00           
+                      38  ht3       -2.0645E+00           
+                      39  ht4        0.0000E+00       FIX 
+                      40  dummy40    0.0000E+00       FIX 
+                      41  dummy41    0.0000E+00       FIX 
+                      42  dummy42    0.0000E+00       FIX 
+                      43  dummy43    0.0000E+00       FIX 
+                      44  dummy44    0.0000E+00       FIX 
+                      45  dummy45    0.0000E+00       FIX 
+                      46  dummy46    0.0000E+00       FIX 
+                      47  dummy47    0.0000E+00       FIX 
+                      48  dummy48    0.0000E+00       FIX 
+                      49  dummy49    0.0000E+00       FIX 
+                      50  bcdmsh2    9.7305E-01           
+                      51  bcdmsd2    9.9341E-01           
+                      52  ccfr       1.0000E+00       FIX 
+                      53  nutev      1.0000E+00       FIX 
+                      54  zeus       9.7998E-01       FIX 
+                      55  h1         1.0162E+00       FIX 
+                      56  e605       1.0319E+00       FIX 
+                      57  NmcH2      1.0095E+00           
+                      58  ntv_nu     1.0000E+00       FIX 
+                      59  ntv_nuba   1.0000E+00       FIX 
+                      60  cdf_jet    9.8910E-01       FIX 
+                      61  d0_jet     8.3504E-01       FIX 
+                      62  slac_p     1.0047E+00           
+                      63  slac_d     1.0042E+00           
+                      64  e866pp     9.6720E-01           
+                      65  e866pd     9.6425E-01           
+                      66  d0_gamje   1.0390E+00           
+                      67  h1b        9.7608E-01       FIX 
+                      68  jlab_p     9.9416E-01           
+                      69  jlab_d     9.7550E-01           
+                      70  blank      1.0000E+00       FIX 
+                      71  d0run2     9.4030E-01           
+                      72  cdfrun2    9.2614E-01           
+                      73  HERA_el    1.0000E+00       FIX 
+                      74  HERA_ps    1.0000E+00       FIX 
+                      75  CDF_Z      9.6568E-01           
+                      76  NmcRat     1.0000E+00       FIX 
+                      77  BNS_F2nd   9.8288E-01           
+                      78  HERMES_F   9.9822E-01           
+                      79  HERMES_F   9.8049E-01           
+ ------------------------------------------------------------
+     2    4.71017E+03
+                       1  LAMBDA     2.2680E-01       FIX 
+                       2  a0uv       2.3868E+00       FIX 
+                       3  a1uv       6.1350E-01           
+                       4  a2uv       3.5441E+00           
+                       5  a3uv       0.0000E+00       FIX 
+                       6  a4uv       3.5031E+00           
+                       7  a5uv       0.0000E+00       FIX 
+                       8  a0dv       2.5125E+01       FIX 
+                       9  a1dv       1.1633E+00           
+                      10  a2dv       6.5604E+00           
+                      11  a3dv      -3.5096E+00           
+                      12  a4dv       4.6736E+00           
+                      13  a5dv       0.0000E+00       FIX 
+                      14  a0ud       1.4672E-01           
+                      15  a1ud      -2.0768E-01           
+                      16  a2ud       8.2984E+00           
+                      17  a3ud       0.0000E+00       FIX 
+                      18  a4ud       1.4488E+01           
+                      19  a5ud       0.0000E+00       FIX 
+                      20  a0du       3.5712E+04       FIX 
+                      21  a1du       4.0343E+00           
+                      22  a2du       2.0103E+01           
+                      23  a3du       1.7000E+01       FIX 
+                      24  a4du       5.1724E+01           
+                      25  a0g        4.5894E+01       FIX 
+                      26  a1g        6.0502E-01           
+                      27  a2g        6.6028E+00           
+                      28  a3g       -3.3052E+00           
+                      29  a4g        3.1936E+00           
+                      30  a5g        0.0000E+00       FIX 
+                      31  kappa      4.0000E-01       FIX 
+                      32  a6dv      -3.5214E-03           
+                      33  a7dv       2.0000E+00       FIX 
+                      34  off1      -3.6493E+00           
+                      35  off2       6.3341E-02           
+                      36  ht1       -3.3416E+00           
+                      37  ht2        1.9436E+00           
+                      38  ht3       -2.0622E+00           
+                      39  ht4        0.0000E+00       FIX 
+                      40  dummy40    0.0000E+00       FIX 
+                      41  dummy41    0.0000E+00       FIX 
+                      42  dummy42    0.0000E+00       FIX 
+                      43  dummy43    0.0000E+00       FIX 
+                      44  dummy44    0.0000E+00       FIX 
+                      45  dummy45    0.0000E+00       FIX 
+                      46  dummy46    0.0000E+00       FIX 
+                      47  dummy47    0.0000E+00       FIX 
+                      48  dummy48    0.0000E+00       FIX 
+                      49  dummy49    0.0000E+00       FIX 
+                      50  bcdmsh2    9.7312E-01           
+                      51  bcdmsd2    9.9331E-01           
+                      52  ccfr       1.0000E+00       FIX 
+                      53  nutev      1.0000E+00       FIX 
+                      54  zeus       9.7998E-01       FIX 
+                      55  h1         1.0162E+00       FIX 
+                      56  e605       1.0319E+00       FIX 
+                      57  NmcH2      1.0094E+00           
+                      58  ntv_nu     1.0000E+00       FIX 
+                      59  ntv_nuba   1.0000E+00       FIX 
+                      60  cdf_jet    9.8910E-01       FIX 
+                      61  d0_jet     8.3504E-01       FIX 
+                      62  slac_p     1.0048E+00           
+                      63  slac_d     1.0041E+00           
+                      64  e866pp     9.6738E-01           
+                      65  e866pd     9.6414E-01           
+                      66  d0_gamje   1.0389E+00           
+                      67  h1b        9.7608E-01       FIX 
+                      68  jlab_p     9.9417E-01           
+                      69  jlab_d     9.7541E-01           
+                      70  blank      1.0000E+00       FIX 
+                      71  d0run2     9.3997E-01           
+                      72  cdfrun2    9.2599E-01           
+                      73  HERA_el    1.0000E+00       FIX 
+                      74  HERA_ps    1.0000E+00       FIX 
+                      75  CDF_Z      9.6565E-01           
+                      76  NmcRat     1.0000E+00       FIX 
+                      77  BNS_F2nd   9.8307E-01           
+                      78  HERMES_F   9.9825E-01           
+                      79  HERMES_F   9.8041E-01           
+ ------------------------------------------------------------
+     3    4.70995E+03
+                       1  LAMBDA     2.2680E-01       FIX 
+                       2  a0uv       2.3791E+00       FIX 
+                       3  a1uv       6.1278E-01           
+                       4  a2uv       3.5448E+00           
+                       5  a3uv       0.0000E+00       FIX 
+                       6  a4uv       3.5210E+00           
+                       7  a5uv       0.0000E+00       FIX 
+                       8  a0dv       2.5161E+01       FIX 
+                       9  a1dv       1.1636E+00           
+                      10  a2dv       6.5603E+00           
+                      11  a3dv      -3.5097E+00           
+                      12  a4dv       4.6719E+00           
+                      13  a5dv       0.0000E+00       FIX 
+                      14  a0ud       1.4673E-01           
+                      15  a1ud      -2.0767E-01           
+                      16  a2ud       8.2950E+00           
+                      17  a3ud       0.0000E+00       FIX 
+                      18  a4ud       1.4467E+01           
+                      19  a5ud       0.0000E+00       FIX 
+                      20  a0du       3.5712E+04       FIX 
+                      21  a1du       4.0364E+00           
+                      22  a2du       2.0083E+01           
+                      23  a3du       1.7000E+01       FIX 
+                      24  a4du       5.1849E+01           
+                      25  a0g        4.6090E+01       FIX 
+                      26  a1g        6.0579E-01           
+                      27  a2g        6.6516E+00           
+                      28  a3g       -3.3072E+00           
+                      29  a4g        3.2063E+00           
+                      30  a5g        0.0000E+00       FIX 
+                      31  kappa      4.0000E-01       FIX 
+                      32  a6dv      -3.5189E-03           
+                      33  a7dv       2.0000E+00       FIX 
+                      34  off1      -3.6565E+00           
+                      35  off2       6.3070E-02           
+                      36  ht1       -3.3626E+00           
+                      37  ht2        1.9523E+00           
+                      38  ht3       -2.0602E+00           
+                      39  ht4        0.0000E+00       FIX 
+                      40  dummy40    0.0000E+00       FIX 
+                      41  dummy41    0.0000E+00       FIX 
+                      42  dummy42    0.0000E+00       FIX 
+                      43  dummy43    0.0000E+00       FIX 
+                      44  dummy44    0.0000E+00       FIX 
+                      45  dummy45    0.0000E+00       FIX 
+                      46  dummy46    0.0000E+00       FIX 
+                      47  dummy47    0.0000E+00       FIX 
+                      48  dummy48    0.0000E+00       FIX 
+                      49  dummy49    0.0000E+00       FIX 
+                      50  bcdmsh2    9.7309E-01           
+                      51  bcdmsd2    9.9324E-01           
+                      52  ccfr       1.0000E+00       FIX 
+                      53  nutev      1.0000E+00       FIX 
+                      54  zeus       9.7998E-01       FIX 
+                      55  h1         1.0162E+00       FIX 
+                      56  e605       1.0319E+00       FIX 
+                      57  NmcH2      1.0093E+00           
+                      58  ntv_nu     1.0000E+00       FIX 
+                      59  ntv_nuba   1.0000E+00       FIX 
+                      60  cdf_jet    9.8910E-01       FIX 
+                      61  d0_jet     8.3504E-01       FIX 
+                      62  slac_p     1.0047E+00           
+                      63  slac_d     1.0040E+00           
+                      64  e866pp     9.6740E-01           
+                      65  e866pd     9.6395E-01           
+                      66  d0_gamje   1.0389E+00           
+                      67  h1b        9.7608E-01       FIX 
+                      68  jlab_p     9.9409E-01           
+                      69  jlab_d     9.7535E-01           
+                      70  blank      1.0000E+00       FIX 
+                      71  d0run2     9.3977E-01           
+                      72  cdfrun2    9.2593E-01           
+                      73  HERA_el    1.0000E+00       FIX 
+                      74  HERA_ps    1.0000E+00       FIX 
+                      75  CDF_Z      9.6551E-01           
+                      76  NmcRat     1.0000E+00       FIX 
+                      77  BNS_F2nd   9.8310E-01           
+                      78  HERMES_F   9.9823E-01           
+                      79  HERMES_F   9.8035E-01           
+ ------------------------------------------------------------
+     4    4.70972E+03
+                       1  LAMBDA     2.2680E-01       FIX 
+                       2  a0uv       2.3715E+00       FIX 
+                       3  a1uv       6.1207E-01           
+                       4  a2uv       3.5453E+00           
+                       5  a3uv       0.0000E+00       FIX 
+                       6  a4uv       3.5383E+00           
+                       7  a5uv       0.0000E+00       FIX 
+                       8  a0dv       2.5199E+01       FIX 
+                       9  a1dv       1.1640E+00           
+                      10  a2dv       6.5602E+00           
+                      11  a3dv      -3.5101E+00           
+                      12  a4dv       4.6706E+00           
+                      13  a5dv       0.0000E+00       FIX 
+                      14  a0ud       1.4674E-01           
+                      15  a1ud      -2.0767E-01           
+                      16  a2ud       8.2925E+00           
+                      17  a3ud       0.0000E+00       FIX 
+                      18  a4ud       1.4453E+01           
+                      19  a5ud       0.0000E+00       FIX 
+                      20  a0du       3.5712E+04       FIX 
+                      21  a1du       4.0378E+00           
+                      22  a2du       2.0070E+01           
+                      23  a3du       1.7000E+01       FIX 
+                      24  a4du       5.1856E+01           
+                      25  a0g        4.6252E+01       FIX 
+                      26  a1g        6.0649E-01           
+                      27  a2g        6.6955E+00           
+                      28  a3g       -3.3091E+00           
+                      29  a4g        3.2187E+00           
+                      30  a5g        0.0000E+00       FIX 
+                      31  kappa      4.0000E-01       FIX 
+                      32  a6dv      -3.5088E-03           
+                      33  a7dv       2.0000E+00       FIX 
+                      34  off1      -3.6645E+00           
+                      35  off2       6.2527E-02           
+                      36  ht1       -3.3812E+00           
+                      37  ht2        1.9602E+00           
+                      38  ht3       -2.0584E+00           
+                      39  ht4        0.0000E+00       FIX 
+                      40  dummy40    0.0000E+00       FIX 
+                      41  dummy41    0.0000E+00       FIX 
+                      42  dummy42    0.0000E+00       FIX 
+                      43  dummy43    0.0000E+00       FIX 
+                      44  dummy44    0.0000E+00       FIX 
+                      45  dummy45    0.0000E+00       FIX 
+                      46  dummy46    0.0000E+00       FIX 
+                      47  dummy47    0.0000E+00       FIX 
+                      48  dummy48    0.0000E+00       FIX 
+                      49  dummy49    0.0000E+00       FIX 
+                      50  bcdmsh2    9.7306E-01           
+                      51  bcdmsd2    9.9319E-01           
+                      52  ccfr       1.0000E+00       FIX 
+                      53  nutev      1.0000E+00       FIX 
+                      54  zeus       9.7998E-01       FIX 
+                      55  h1         1.0162E+00       FIX 
+                      56  e605       1.0319E+00       FIX 
+                      57  NmcH2      1.0092E+00           
+                      58  ntv_nu     1.0000E+00       FIX 
+                      59  ntv_nuba   1.0000E+00       FIX 
+                      60  cdf_jet    9.8910E-01       FIX 
+                      61  d0_jet     8.3504E-01       FIX 
+                      62  slac_p     1.0047E+00           
+                      63  slac_d     1.0040E+00           
+                      64  e866pp     9.6748E-01           
+                      65  e866pd     9.6386E-01           
+                      66  d0_gamje   1.0389E+00           
+                      67  h1b        9.7608E-01       FIX 
+                      68  jlab_p     9.9403E-01           
+                      69  jlab_d     9.7530E-01           
+                      70  blank      1.0000E+00       FIX 
+                      71  d0run2     9.3957E-01           
+                      72  cdfrun2    9.2587E-01           
+                      73  HERA_el    1.0000E+00       FIX 
+                      74  HERA_ps    1.0000E+00       FIX 
+                      75  CDF_Z      9.6541E-01           
+                      76  NmcRat     1.0000E+00       FIX 
+                      77  BNS_F2nd   9.8314E-01           
+                      78  HERMES_F   9.9821E-01           
+                      79  HERMES_F   9.8032E-01           
+ ------------------------------------------------------------
+     5    4.70947E+03
+                       1  LAMBDA     2.2680E-01       FIX 
+                       2  a0uv       2.3640E+00       FIX 
+                       3  a1uv       6.1136E-01           
+                       4  a2uv       3.5457E+00           
+                       5  a3uv       0.0000E+00       FIX 
+                       6  a4uv       3.5550E+00           
+                       7  a5uv       0.0000E+00       FIX 
+                       8  a0dv       2.5237E+01       FIX 
+                       9  a1dv       1.1643E+00           
+                      10  a2dv       6.5602E+00           
+                      11  a3dv      -3.5107E+00           
+                      12  a4dv       4.6699E+00           
+                      13  a5dv       0.0000E+00       FIX 
+                      14  a0ud       1.4674E-01           
+                      15  a1ud      -2.0768E-01           
+                      16  a2ud       8.2906E+00           
+                      17  a3ud       0.0000E+00       FIX 
+                      18  a4ud       1.4445E+01           
+                      19  a5ud       0.0000E+00       FIX 
+                      20  a0du       3.5712E+04       FIX 
+                      21  a1du       4.0391E+00           
+                      22  a2du       2.0059E+01           
+                      23  a3du       1.7000E+01       FIX 
+                      24  a4du       5.1876E+01           
+                      25  a0g        4.6406E+01       FIX 
+                      26  a1g        6.0713E-01           
+                      27  a2g        6.7358E+00           
+                      28  a3g       -3.3112E+00           
+                      29  a4g        3.2305E+00           
+                      30  a5g        0.0000E+00       FIX 
+                      31  kappa      4.0000E-01       FIX 
+                      32  a6dv      -3.4985E-03           
+                      33  a7dv       2.0000E+00       FIX 
+                      34  off1      -3.6732E+00           
+                      35  off2       6.1848E-02           
+                      36  ht1       -3.3977E+00           
+                      37  ht2        1.9675E+00           
+                      38  ht3       -2.0567E+00           
+                      39  ht4        0.0000E+00       FIX 
+                      40  dummy40    0.0000E+00       FIX 
+                      41  dummy41    0.0000E+00       FIX 
+                      42  dummy42    0.0000E+00       FIX 
+                      43  dummy43    0.0000E+00       FIX 
+                      44  dummy44    0.0000E+00       FIX 
+                      45  dummy45    0.0000E+00       FIX 
+                      46  dummy46    0.0000E+00       FIX 
+                      47  dummy47    0.0000E+00       FIX 
+                      48  dummy48    0.0000E+00       FIX 
+                      49  dummy49    0.0000E+00       FIX 
+                      50  bcdmsh2    9.7303E-01           
+                      51  bcdmsd2    9.9313E-01           
+                      52  ccfr       1.0000E+00       FIX 
+                      53  nutev      1.0000E+00       FIX 
+                      54  zeus       9.7998E-01       FIX 
+                      55  h1         1.0162E+00       FIX 
+                      56  e605       1.0319E+00       FIX 
+                      57  NmcH2      1.0091E+00           
+                      58  ntv_nu     1.0000E+00       FIX 
+                      59  ntv_nuba   1.0000E+00       FIX 
+                      60  cdf_jet    9.8910E-01       FIX 
+                      61  d0_jet     8.3504E-01       FIX 
+                      62  slac_p     1.0047E+00           
+                      63  slac_d     1.0039E+00           
+                      64  e866pp     9.6758E-01           
+                      65  e866pd     9.6381E-01           
+                      66  d0_gamje   1.0389E+00           
+                      67  h1b        9.7608E-01       FIX 
+                      68  jlab_p     9.9397E-01           
+                      69  jlab_d     9.7526E-01           
+                      70  blank      1.0000E+00       FIX 
+                      71  d0run2     9.3941E-01           
+                      72  cdfrun2    9.2583E-01           
+                      73  HERA_el    1.0000E+00       FIX 
+                      74  HERA_ps    1.0000E+00       FIX 
+                      75  CDF_Z      9.6530E-01           
+                      76  NmcRat     1.0000E+00       FIX 
+                      77  BNS_F2nd   9.8318E-01           
+                      78  HERMES_F   9.9820E-01           
+                      79  HERMES_F   9.8029E-01           
+ ------------------------------------------------------------
+     6    4.70925E+03
+                       1  LAMBDA     2.2680E-01       FIX 
+                       2  a0uv       2.3566E+00       FIX 
+                       3  a1uv       6.1066E-01           
+                       4  a2uv       3.5461E+00           
+                       5  a3uv       0.0000E+00       FIX 
+                       6  a4uv       3.5713E+00           
+                       7  a5uv       0.0000E+00       FIX 
+                       8  a0dv       2.5272E+01       FIX 
+                       9  a1dv       1.1646E+00           
+                      10  a2dv       6.5604E+00           
+                      11  a3dv      -3.5114E+00           
+                      12  a4dv       4.6695E+00           
+                      13  a5dv       0.0000E+00       FIX 
+                      14  a0ud       1.4672E-01           
+                      15  a1ud      -2.0769E-01           
+                      16  a2ud       8.2892E+00           
+                      17  a3ud       0.0000E+00       FIX 
+                      18  a4ud       1.4441E+01           
+                      19  a5ud       0.0000E+00       FIX 
+                      20  a0du       3.5712E+04       FIX 
+                      21  a1du       4.0402E+00           
+                      22  a2du       2.0050E+01           
+                      23  a3du       1.7000E+01       FIX 
+                      24  a4du       5.1888E+01           
+                      25  a0g        4.6553E+01       FIX 
+                      26  a1g        6.0773E-01           
+                      27  a2g        6.7727E+00           
+                      28  a3g       -3.3133E+00           
+                      29  a4g        3.2419E+00           
+                      30  a5g        0.0000E+00       FIX 
+                      31  kappa      4.0000E-01       FIX 
+                      32  a6dv      -3.4894E-03           
+                      33  a7dv       2.0000E+00       FIX 
+                      34  off1      -3.6820E+00           
+                      35  off2       6.1110E-02           
+                      36  ht1       -3.4127E+00           
+                      37  ht2        1.9742E+00           
+                      38  ht3       -2.0553E+00           
+                      39  ht4        0.0000E+00       FIX 
+                      40  dummy40    0.0000E+00       FIX 
+                      41  dummy41    0.0000E+00       FIX 
+                      42  dummy42    0.0000E+00       FIX 
+                      43  dummy43    0.0000E+00       FIX 
+                      44  dummy44    0.0000E+00       FIX 
+                      45  dummy45    0.0000E+00       FIX 
+                      46  dummy46    0.0000E+00       FIX 
+                      47  dummy47    0.0000E+00       FIX 
+                      48  dummy48    0.0000E+00       FIX 
+                      49  dummy49    0.0000E+00       FIX 
+                      50  bcdmsh2    9.7300E-01           
+                      51  bcdmsd2    9.9308E-01           
+                      52  ccfr       1.0000E+00       FIX 
+                      53  nutev      1.0000E+00       FIX 
+                      54  zeus       9.7998E-01       FIX 
+                      55  h1         1.0162E+00       FIX 
+                      56  e605       1.0319E+00       FIX 
+                      57  NmcH2      1.0090E+00           
+                      58  ntv_nu     1.0000E+00       FIX 
+                      59  ntv_nuba   1.0000E+00       FIX 
+                      60  cdf_jet    9.8910E-01       FIX 
+                      61  d0_jet     8.3504E-01       FIX 
+                      62  slac_p     1.0046E+00           
+                      63  slac_d     1.0039E+00           
+                      64  e866pp     9.6770E-01           
+                      65  e866pd     9.6379E-01           
+                      66  d0_gamje   1.0388E+00           
+                      67  h1b        9.7608E-01       FIX 
+                      68  jlab_p     9.9390E-01           
+                      69  jlab_d     9.7521E-01           
+                      70  blank      1.0000E+00       FIX 
+                      71  d0run2     9.3926E-01           
+                      72  cdfrun2    9.2579E-01           
+                      73  HERA_el    1.0000E+00       FIX 
+                      74  HERA_ps    1.0000E+00       FIX 
+                      75  CDF_Z      9.6521E-01           
+                      76  NmcRat     1.0000E+00       FIX 
+                      77  BNS_F2nd   9.8321E-01           
+                      78  HERMES_F   9.9818E-01           
+                      79  HERMES_F   9.8026E-01           
+ ------------------------------------------------------------
+     7    4.70906E+03
+                       1  LAMBDA     2.2680E-01       FIX 
+                       2  a0uv       2.3495E+00       FIX 
+                       3  a1uv       6.0998E-01           
+                       4  a2uv       3.5464E+00           
+                       5  a3uv       0.0000E+00       FIX 
+                       6  a4uv       3.5872E+00           
+                       7  a5uv       0.0000E+00       FIX 
+                       8  a0dv       2.5305E+01       FIX 
+                       9  a1dv       1.1648E+00           
+                      10  a2dv       6.5608E+00           
+                      11  a3dv      -3.5122E+00           
+                      12  a4dv       4.6695E+00           
+                      13  a5dv       0.0000E+00       FIX 
+                      14  a0ud       1.4670E-01           
+                      15  a1ud      -2.0771E-01           
+                      16  a2ud       8.2884E+00           
+                      17  a3ud       0.0000E+00       FIX 
+                      18  a4ud       1.4440E+01           
+                      19  a5ud       0.0000E+00       FIX 
+                      20  a0du       3.5712E+04       FIX 
+                      21  a1du       4.0412E+00           
+                      22  a2du       2.0042E+01           
+                      23  a3du       1.7000E+01       FIX 
+                      24  a4du       5.1900E+01           
+                      25  a0g        4.6692E+01       FIX 
+                      26  a1g        6.0829E-01           
+                      27  a2g        6.8064E+00           
+                      28  a3g       -3.3155E+00           
+                      29  a4g        3.2528E+00           
+                      30  a5g        0.0000E+00       FIX 
+                      31  kappa      4.0000E-01       FIX 
+                      32  a6dv      -3.4818E-03           
+                      33  a7dv       2.0000E+00       FIX 
+                      34  off1      -3.6901E+00           
+                      35  off2       6.0372E-02           
+                      36  ht1       -3.4262E+00           
+                      37  ht2        1.9803E+00           
+                      38  ht3       -2.0540E+00           
+                      39  ht4        0.0000E+00       FIX 
+                      40  dummy40    0.0000E+00       FIX 
+                      41  dummy41    0.0000E+00       FIX 
+                      42  dummy42    0.0000E+00       FIX 
+                      43  dummy43    0.0000E+00       FIX 
+                      44  dummy44    0.0000E+00       FIX 
+                      45  dummy45    0.0000E+00       FIX 
+                      46  dummy46    0.0000E+00       FIX 
+                      47  dummy47    0.0000E+00       FIX 
+                      48  dummy48    0.0000E+00       FIX 
+                      49  dummy49    0.0000E+00       FIX 
+                      50  bcdmsh2    9.7296E-01           
+                      51  bcdmsd2    9.9303E-01           
+                      52  ccfr       1.0000E+00       FIX 
+                      53  nutev      1.0000E+00       FIX 
+                      54  zeus       9.7998E-01       FIX 
+                      55  h1         1.0162E+00       FIX 
+                      56  e605       1.0319E+00       FIX 
+                      57  NmcH2      1.0090E+00           
+                      58  ntv_nu     1.0000E+00       FIX 
+                      59  ntv_nuba   1.0000E+00       FIX 
+                      60  cdf_jet    9.8910E-01       FIX 
+                      61  d0_jet     8.3504E-01       FIX 
+                      62  slac_p     1.0046E+00           
+                      63  slac_d     1.0039E+00           
+                      64  e866pp     9.6782E-01           
+                      65  e866pd     9.6378E-01           
+                      66  d0_gamje   1.0388E+00           
+                      67  h1b        9.7608E-01       FIX 
+                      68  jlab_p     9.9385E-01           
+                      69  jlab_d     9.7517E-01           
+                      70  blank      1.0000E+00       FIX 
+                      71  d0run2     9.3914E-01           
+                      72  cdfrun2    9.2577E-01           
+                      73  HERA_el    1.0000E+00       FIX 
+                      74  HERA_ps    1.0000E+00       FIX 
+                      75  CDF_Z      9.6512E-01           
+                      76  NmcRat     1.0000E+00       FIX 
+                      77  BNS_F2nd   9.8324E-01           
+                      78  HERMES_F   9.9816E-01           
+                      79  HERMES_F   9.8023E-01           
+ ------------------------------------------------------------
+     8    4.70891E+03
+                       1  LAMBDA     2.2680E-01       FIX 
+                       2  a0uv       2.3425E+00       FIX 
+                       3  a1uv       6.0931E-01           
+                       4  a2uv       3.5467E+00           
+                       5  a3uv       0.0000E+00       FIX 
+                       6  a4uv       3.6027E+00           
+                       7  a5uv       0.0000E+00       FIX 
+                       8  a0dv       2.5334E+01       FIX 
+                       9  a1dv       1.1650E+00           
+                      10  a2dv       6.5612E+00           
+                      11  a3dv      -3.5130E+00           
+                      12  a4dv       4.6697E+00           
+                      13  a5dv       0.0000E+00       FIX 
+                      14  a0ud       1.4667E-01           
+                      15  a1ud      -2.0774E-01           
+                      16  a2ud       8.2880E+00           
+                      17  a3ud       0.0000E+00       FIX 
+                      18  a4ud       1.4443E+01           
+                      19  a5ud       0.0000E+00       FIX 
+                      20  a0du       3.5712E+04       FIX 
+                      21  a1du       4.0422E+00           
+                      22  a2du       2.0036E+01           
+                      23  a3du       1.7000E+01       FIX 
+                      24  a4du       5.1913E+01           
+                      25  a0g        4.6825E+01       FIX 
+                      26  a1g        6.0882E-01           
+                      27  a2g        6.8374E+00           
+                      28  a3g       -3.3177E+00           
+                      29  a4g        3.2632E+00           
+                      30  a5g        0.0000E+00       FIX 
+                      31  kappa      4.0000E-01       FIX 
+                      32  a6dv      -3.4757E-03           
+                      33  a7dv       2.0000E+00       FIX 
+                      34  off1      -3.6974E+00           
+                      35  off2       5.9662E-02           
+                      36  ht1       -3.4386E+00           
+                      37  ht2        1.9858E+00           
+                      38  ht3       -2.0528E+00           
+                      39  ht4        0.0000E+00       FIX 
+                      40  dummy40    0.0000E+00       FIX 
+                      41  dummy41    0.0000E+00       FIX 
+                      42  dummy42    0.0000E+00       FIX 
+                      43  dummy43    0.0000E+00       FIX 
+                      44  dummy44    0.0000E+00       FIX 
+                      45  dummy45    0.0000E+00       FIX 
+                      46  dummy46    0.0000E+00       FIX 
+                      47  dummy47    0.0000E+00       FIX 
+                      48  dummy48    0.0000E+00       FIX 
+                      49  dummy49    0.0000E+00       FIX 
+                      50  bcdmsh2    9.7293E-01           
+                      51  bcdmsd2    9.9298E-01           
+                      52  ccfr       1.0000E+00       FIX 

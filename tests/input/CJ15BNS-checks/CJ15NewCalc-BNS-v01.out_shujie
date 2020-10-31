@@ -1,0 +1,180 @@
+ Correlated errors added in quadrature with statistical errors
+ BNSF2dnCmd           DIS data with   1.69< Q2 < 0.100D+04 and 0.000 < xB < 1.000 and   1.00< W2 < 0.100D+08 and 0.000 < y < 1.000
+   WBArel smearing  (AV18) - KP-like (baryon conserv.)0 nuke corrections
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+
+# fitpack15: fit output
+# CJ15 AV18 final data choices                                                 
+
+Parametrization   7 used here
+
+ S-ACOT scheme used  for NC DIS
+
+ charm mass =     1.30 GeV     bottom mass =     4.50 GeV
+
+
+
+ THIS IS A NEXT TO LEADING ORDER FIT
+
+ Q02=    1.69
+         1  LAMBDA      VALUE=   0.22680      WEIGHT=    0.0000    
+         2  a0uv        VALUE=    2.4067      WEIGHT=    0.0000    
+         3  a1uv        VALUE=   0.61537      WEIGHT=   0.19856E-01
+         4  a2uv        VALUE=    3.5433      WEIGHT=   0.12414E-01
+         5  a3uv        VALUE=    0.0000      WEIGHT=    0.0000    
+         6  a4uv        VALUE=    3.4609      WEIGHT=   0.42903    
+         7  a5uv        VALUE=    0.0000      WEIGHT=    0.0000    
+         8  a0dv        VALUE=    24.684      WEIGHT=    0.0000    
+         9  a1dv        VALUE=    1.1595      WEIGHT=   0.33533E-01
+        10  a2dv        VALUE=    6.5514      WEIGHT=   0.15936    
+        11  a3dv        VALUE=   -3.5030      WEIGHT=   0.86332E-01
+        12  a4dv        VALUE=    4.6787      WEIGHT=   0.14209    
+        13  a5dv        VALUE=    0.0000      WEIGHT=    0.0000    
+        14  a0ud        VALUE=   0.14658      WEIGHT=   0.50348E-02
+        15  a1ud        VALUE=  -0.20775      WEIGHT=   0.37551E-02
+        16  a2ud        VALUE=    8.3286      WEIGHT=   0.19114    
+        17  a3ud        VALUE=    0.0000      WEIGHT=    0.0000    
+        18  a4ud        VALUE=    14.606      WEIGHT=    1.2151    
+        19  a5ud        VALUE=    0.0000      WEIGHT=    0.0000    
+        20  a0du        VALUE=    35712.      WEIGHT=    0.0000    
+        21  a1du        VALUE=    4.0249      WEIGHT=   0.74070E-01
+        22  a2du        VALUE=    20.154      WEIGHT=   0.87862    
+        23  a3du        VALUE=    17.000      WEIGHT=    0.0000    
+        24  a4du        VALUE=    51.156      WEIGHT=    10.239    
+        25  a0g         VALUE=    45.541      WEIGHT=    0.0000    
+        26  a1g         VALUE=   0.60307      WEIGHT=   0.31164E-01
+        27  a2g         VALUE=    6.4812      WEIGHT=   0.96748    
+        28  a3g         VALUE=   -3.3064      WEIGHT=   0.13418    
+        29  a4g         VALUE=    3.1721      WEIGHT=   0.31376    
+        30  a5g         VALUE=    0.0000      WEIGHT=    0.0000    
+        31  kappa       VALUE=   0.40000      WEIGHT=    0.0000    
+        32  a6dv        VALUE=  -0.36005E-02  WEIGHT=   0.66324E-03
+        33  a7dv        VALUE=    2.0000      WEIGHT=    0.0000    
+        34  off1        VALUE=   -3.6735      WEIGHT=    1.5278    
+        35  off2        VALUE=   0.57717E-01  WEIGHT=   0.14842E-01
+        36  ht1         VALUE=   -3.2874      WEIGHT=   0.26061    
+        37  ht2         VALUE=    1.9274      WEIGHT=   0.10524    
+        38  ht3         VALUE=   -2.0701      WEIGHT=   0.19888E-01
+        39  ht4         VALUE=    0.0000      WEIGHT=    0.0000    
+        40  dummy40     VALUE=    0.0000      WEIGHT=    0.0000    
+        41  dummy41     VALUE=    0.0000      WEIGHT=    0.0000    
+        42  dummy42     VALUE=    0.0000      WEIGHT=    0.0000    
+        43  dummy43     VALUE=    0.0000      WEIGHT=    0.0000    
+        44  dummy44     VALUE=    0.0000      WEIGHT=    0.0000    
+        45  dummy45     VALUE=    0.0000      WEIGHT=    0.0000    
+        46  dummy46     VALUE=    0.0000      WEIGHT=    0.0000    
+        47  dummy47     VALUE=    0.0000      WEIGHT=    0.0000    
+        48  dummy48     VALUE=    0.0000      WEIGHT=    0.0000    
+        49  dummy49     VALUE=    0.0000      WEIGHT=    0.0000    
+        50  bcdmsh2     VALUE=   0.97307      WEIGHT=   0.48289E-02
+        51  bcdmsd2     VALUE=   0.99317      WEIGHT=   0.58269E-02
+        52  ccfr        VALUE=    1.0000      WEIGHT=    0.0000    
+        53  nutev       VALUE=    1.0000      WEIGHT=    0.0000    
+        54  zeus        VALUE=   0.97998      WEIGHT=    0.0000    
+        55  h1          VALUE=    1.0162      WEIGHT=    0.0000    
+        56  e605        VALUE=    1.0319      WEIGHT=    0.0000    
+        57  NmcH2       VALUE=    1.0095      WEIGHT=   0.71247E-02
+        58  ntv_nu      VALUE=    1.0000      WEIGHT=    0.0000    
+        59  ntv_nubar   VALUE=    1.0000      WEIGHT=    0.0000    
+        60  cdf_jet     VALUE=   0.98910      WEIGHT=    0.0000    
+        61  d0_jet      VALUE=   0.83504      WEIGHT=    0.0000    
+        62  slac_p      VALUE=    1.0049      WEIGHT=   0.48124E-02
+        63  slac_d      VALUE=    1.0042      WEIGHT=   0.52781E-02
+        64  e866pp      VALUE=   0.96586      WEIGHT=   0.19263E-01
+        65  e866pd      VALUE=   0.96369      WEIGHT=   0.15783E-01
+        66  d0_gamjet   VALUE=    1.0389      WEIGHT=   0.16474E-01
+        67  h1b         VALUE=   0.97608      WEIGHT=    0.0000    
+        68  jlab_p      VALUE=   0.99446      WEIGHT=   0.57943E-02
+        69  jlab_d      VALUE=   0.97557      WEIGHT=   0.59019E-02
+        70  blank       VALUE=    1.0000      WEIGHT=    0.0000    
+        71  d0run2      VALUE=   0.94087      WEIGHT=   0.14167E-01
+        72  cdfrun2     VALUE=   0.92649      WEIGHT=   0.17233E-01
+        73  HERA_el     VALUE=    1.0000      WEIGHT=    0.0000    
+        74  HERA_ps     VALUE=    1.0000      WEIGHT=    0.0000    
+        75  CDF_Z       VALUE=   0.96581      WEIGHT=   0.64944E-02
+        76  NmcRat      VALUE=    1.0000      WEIGHT=    0.0000    
+        77  BNS_F2nd    VALUE=   0.98310      WEIGHT=   0.68314E-02
+        78  HERMES_F2p  VALUE=   0.99832      WEIGHT=   0.55693E-02
+        79  HERMES_F2d  VALUE=   0.98039      WEIGHT=   0.58259E-02
+0THE TOLERANCE IS    0.5000
+ THE MAXIMUM NUMBER OF STEPS IS 100
+0THE INITIAL CHI SQUARED IS  1.03625E+01
+
+
+
+     X        Q2         W2       THEORY        error         DATA           ERROR        chi^2     _w    ITYPE
+.1770E+00     1.710  0.883E+01   0.99335E+00   0.00000E+00   0.99500E+00    0.15297E-01   -0.01         BNSF2dnCmd          
+.2240E+00     1.710  0.681E+01   0.99255E+00   0.00000E+00   0.99100E+00    0.10440E-01    0.02         BNSF2dnCmd          
+.2730E+00     1.710  0.544E+01   0.99191E+00   0.00000E+00   0.99700E+00    0.76158E-02   -0.45         BNSF2dnCmd          
+.3230E+00     1.710  0.447E+01   0.99096E+00   0.00000E+00   0.99400E+00    0.76158E-02   -0.16         BNSF2dnCmd          
+.3730E+00     1.710  0.376E+01   0.99082E+00   0.00000E+00   0.10000E+01    0.76158E-02   -1.45         BNSF2dnCmd          
+.4220E+00     1.710  0.322E+01   0.99142E+00   0.00000E+00   0.99200E+00    0.94868E-02   -0.00         BNSF2dnCmd          
+.4720E+00     1.850  0.295E+01   0.99207E+00   0.00000E+00   0.98300E+00    0.98489E-02    0.85         BNSF2dnCmd          
+.5230E+00     2.010  0.271E+01   0.99323E+00   0.00000E+00   0.96700E+00    0.12649E-01    4.30         BNSF2dnCmd          
+.5720E+00     2.300  0.260E+01   0.99441E+00   0.00000E+00   0.99400E+00    0.15232E-01    0.00         BNSF2dnCmd          
+.6190E+00     2.540  0.245E+01   0.99693E+00   0.00000E+00   0.97400E+00    0.18385E-01    1.56         BNSF2dnCmd          
+.6700E+00     2.970  0.234E+01   0.10020E+01   0.00000E+00   0.98400E+00    0.23707E-01    0.58         BNSF2dnCmd          
+.7190E+00     3.390  0.221E+01   0.10104E+01   0.00000E+00   0.10190E+01    0.31401E-01   -0.07         BNSF2dnCmd          
+.7670E+00     4.030  0.211E+01   0.10271E+01   0.00000E+00   0.10750E+01    0.50220E-01   -0.91         BNSF2dnCmd          
+
+
+
+ CHI SQUARE=   10.36 FOR   13 POINTS   CHISQ/NPTS=    0.80
+ Signed chisquare total =    4.24
+ Modified residual =  -33.65
+
+
+Summary normalization chi2 contributions
+
+ data set     normalization        error         chisq
+
+
+Summary chi2 per data set
+
+ data set                chisq    _w     signd    _w     resid     _w   npts   chisq/pts  _w
+BNSF2dnCmd                10.4             4.2           -33.6            13    0.80
+------------------------------------------------------------------------------------
+          TOTAL           10.4    10.4     4.2     0.0   -33.6   -33.6    13    0.80    0.80
+          TOTAL+norm      10.4    10.4                                    13    0.80    0.80
+
+
+
+            Momentum Sum Rule Check
+
+
+      q2      alphas      xuv       xdv       xub       xdb       xsb       xcb       xbb      xglue     total
+      1.69    0.3845    0.3222    0.1370    0.0551    0.0716    0.0253    0.0000    0.0000    0.3890    1.0002
+    100.00    0.1784    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+   1000.00    0.1407    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+   8315.00    0.1180    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+
+
+ Vector Boson Cross Sections
+
+ sqrt(s)   sigma(W)    error    theory
+
+   1960.     2.865     0.063       0.000     D0
+
+   1960.     2.749     0.054       0.000     CDF
+
+   7000.     9.95      0.29        0.000     CMS
+
+   7000.     9.96      0.55        0.000     ATLAS
+
+ sqrt(s)   sigma(Z)    error    theory
+
+   1960.     .2649     .0094       0.000     D0
+
+   1960.     .2549     .0057       0.000     CDF
+
+   7000.     .931      0.035       0.000     CMS
+
+   7000.     .82       0.08        0.000     ATLAS
+
+
+ KP-like off-shell parameters -- N*(x-x0)*(x-x1)*(1+x0-x)
+
+  N =   -3.6735     +-     0.0000    
+ x0 =   0.57717E-01 +-     0.0000    
+ x1 =   0.36419      fixed by sum rule

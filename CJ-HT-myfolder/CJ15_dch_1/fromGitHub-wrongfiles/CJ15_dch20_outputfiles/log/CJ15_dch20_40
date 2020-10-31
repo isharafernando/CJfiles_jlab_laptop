@@ -1,0 +1,282 @@
+ WARNING -- USER TOLERANCE SET TO   0.10000000000000001     
+ Output in 'CJ15_dch20_40.###'
+* KP-like:   0  -3.67350E+00  5.60355E-02  3.58565E-01
+ Nuclear smearing '/work/halla/triton/shujie/CJ/CJ-code/fitpack//nucl/phi.wbarel_AV18' read in
+ # ################################################################
+ #                                                                 
+ #   fastNLO - version 1.4         Jan. 31, 2006                   
+ #                                                                 
+ #   Thomas Kluge, Klaus Rabbertz, Markus Wobisch                  
+ #                                                                 
+ #   if you use this code, please cite as reference:               
+ #       T. Kluge, K. Rabbertz and M. Wobisch,                     
+ #          publication in preparation,                            
+ #          (hep-ex No. to be added)                               
+ #                                                                 
+ #      .... now reading the coefficient table:                    
+ #       tableformat is version   1.3999999999999999     
+ #       35700000000 events in LO                                                              
+ #       47790000000 events in NLO                                                             
+ #           1536000 events in threshold-corrections-2-loop                                    
+ #           No. of x bins:           12
+ #      
+ #      this table contains: d2sigma-jet_dpT_dy_(pb_GeV)                                     
+ #      as published in:     hep-ex-                                                         
+ #      by:                  D0_Collaboration                                                
+ #      
+ #      reaction: proton-antiproton
+ #      process:  inclusive jets   
+ #      total No. of observable bins:          110
+ #      jet algo: midpoint cone algorithm     
+ #         parameter 1:  Rcone=  0.69999999999999996     
+ #         parameter 2:  f_overlap   =  0.50000000000000000     
+ #
+ #
+ #      the single contributions have been computed
+ #      using the following codes:
+ #      LO                                                              
+ #         by: NLOJET++                                                        
+ #      NLO                                                             
+ #         by: NLOJET++                                                        
+ #      threshold-corrections-2-loop                                    
+ #         by: Kidonakis-Owens                                                 
+ #
+ #   for NLOJET++ please cite:                                     
+ #       Z. Nagy, Phys. Rev. Lett. 88, 122003 (2002),              
+ #       Z. Nagy, Phys. Rev. D68, 094002 (2003).                   
+ #                                                                 
+ #   the 2-loop threshold corrections for the inclusive jet        
+ #   cross section in pp and ppbar have been computed by:          
+ #   N. Kidonakis and J.F. Owens - please cite                     
+ #      N. Kidonakis, J.F. Owens, Phys. Rev. D63, 054019 (2001).   
+ #                                                                 
+ #
+ #   --- the renormalization and factorization scales mur, muf
+ #       are proportional to
+ #           mu0 = pT_of_individual_jet                                            
+ #  
+ #   --- available No. of scales variations:            4
+ #         available factorization scale settings:
+ #                      1   (muf/mu0)  0.25000000000000000     
+ #                      2   (muf/mu0)  0.50000000000000000     
+ #                      3   (muf/mu0)   1.0000000000000000     
+ #                      4   (muf/mu0)   2.0000000000000000     
+ #
+ #         available renormalization scale settings:
+ #                      1   (mur/mu0)=  0.25000000000000000     
+ #                      2   (mur/mu0)=  0.50000000000000000     
+ #                      3   (mur/mu0)=   1.0000000000000000     
+ #                      4   (mur/mu0)=   2.0000000000000000     
+ #         (in LO and NLO, the renormalization scale
+ #          can be varied arbitrarily afterwards.
+ #          This is, however, not possible for the
+ #          2-loop threshold corrections.)
+ # 
+ #    --> in the first call the scales are chosen to be:
+ #     (mur/mu0) =   1.0000    (muf/mu0) =   1.0000
+ # 
+ ##############################################################
+  
+ # ################################################################
+ #                                                                 
+ #   fastNLO - version 1.4         Jan. 31, 2006                   
+ #                                                                 
+ #   Thomas Kluge, Klaus Rabbertz, Markus Wobisch                  
+ #                                                                 
+ #   if you use this code, please cite as reference:               
+ #       T. Kluge, K. Rabbertz and M. Wobisch,                     
+ #          publication in preparation,                            
+ #          (hep-ex No. to be added)                               
+ #                                                                 
+ #      .... now reading the coefficient table:                    
+ #       tableformat is version   1.3999999999999999     
+ #       30000000000 events in LO                                                              
+ #       47580000000 events in NLO                                                             
+ #           1536000 events in 2-loop-threshold-corrections                                    
+ #           No. of x bins:           12
+          77          77
+ #      
+ #      this table contains: d2sigma-jet_dpT_dy_(nb_GeV)                                     
+ #      as published in:     preliminary                                                     
+ #      by:                  CDF_Collaboration                                               
+ #      
+ #      reaction: proton-antiproton
+ #      process:  inclusive jets   
+ #      total No. of observable bins:           77
+ #      jet algo: midpoint cone algorithm     
+ #         parameter 1:  Rcone=  0.69999999999999996     
+ #         parameter 2:  f_overlap   =  0.75000000000000000     
+ #
+ #
+ #      the single contributions have been computed
+ #      using the following codes:
+ #      LO                                                              
+ #         by: NLOJET++                                                        
+ #      NLO                                                             
+ #         by: NLOJET++                                                        
+ #      2-loop-threshold-corrections                                    
+ #         by: Kidonakis-Owens                                                 
+ #
+ #   for NLOJET++ please cite:                                     
+ #       Z. Nagy, Phys. Rev. Lett. 88, 122003 (2002),              
+ #       Z. Nagy, Phys. Rev. D68, 094002 (2003).                   
+ #                                                                 
+ #   the 2-loop threshold corrections for the inclusive jet        
+ #   cross section in pp and ppbar have been computed by:          
+ #   N. Kidonakis and J.F. Owens - please cite                     
+ #      N. Kidonakis, J.F. Owens, Phys. Rev. D63, 054019 (2001).   
+ #                                                                 
+ #
+ #   --- the renormalization and factorization scales mur, muf
+ #       are proportional to
+ #           mu0 = pT_of_individual_jet                                            
+ #  
+ #   --- available No. of scales variations:            4
+ #         available factorization scale settings:
+ #                      1   (muf/mu0)  0.25000000000000000     
+ #                      2   (muf/mu0)  0.50000000000000000     
+ #                      3   (muf/mu0)   1.0000000000000000     
+ #                      4   (muf/mu0)   2.0000000000000000     
+ #
+ #         available renormalization scale settings:
+ #                      1   (mur/mu0)=  0.25000000000000000     
+ #                      2   (mur/mu0)=  0.50000000000000000     
+ #                      3   (mur/mu0)=   1.0000000000000000     
+ #                      4   (mur/mu0)=   2.0000000000000000     
+ #         (in LO and NLO, the renormalization scale
+ #          can be varied arbitrarily afterwards.
+ #          This is, however, not possible for the
+ #          2-loop threshold corrections.)
+ # 
+ #    --> in the first call the scales are chosen to be:
+ #     (mur/mu0) =   1.0000    (muf/mu0) =   1.0000
+ # 
+ ##############################################################
+  
+* KP-like:   0  -3.67350E+00  5.60355E-02  3.58565E-01
+* KP-like:   1  -3.67350E+00  5.60355E-02  3.56850E-01
+* KP-like:   2  -3.67350E+00  5.60355E-02  3.58368E-01
+* KP-like:   3  -3.67350E+00  5.60355E-02  3.58211E-01
+* KP-like:   4  -3.67350E+00  5.60355E-02  3.57057E-01
+* KP-like:   5  -3.67350E+00  5.60355E-02  3.58542E-01
+* KP-like:   6  -3.67350E+00  5.60355E-02  3.56735E-01
+* KP-like:   7  -3.67350E+00  5.60355E-02  3.57369E-01
+* KP-like:   8  -3.67350E+00  5.60355E-02  3.58565E-01
+* KP-like:   9  -3.67350E+00  5.60355E-02  3.58565E-01
+* KP-like:  10  -3.67350E+00  5.60355E-02  3.58565E-01
+* KP-like:  11  -3.67350E+00  5.60355E-02  3.58565E-01
+* KP-like:  12  -3.67350E+00  5.60355E-02  3.58565E-01
+* KP-like:  13  -3.67350E+00  5.60355E-02  3.58565E-01
+* KP-like:  14  -3.67350E+00  5.60355E-02  3.58565E-01
+* KP-like:  15  -3.67350E+00  5.60355E-02  3.58565E-01
+* KP-like:  16  -3.67350E+00  5.60355E-02  3.58565E-01
+* KP-like:  17  -3.67350E+00  5.60355E-02  3.58565E-01
+* KP-like:  18  -3.67350E+00  5.60355E-02  3.58565E-01
+* KP-like:  19  -3.67350E+00  5.60355E-02  3.58406E-01
+* KP-like:  20  -2.14570E+00  5.60355E-02  3.58565E-01
+* KP-like:  21  -3.67350E+00  7.08775E-02  4.17579E-01
+* KP-like:   0  -3.67350E+00  5.60355E-02  3.58565E-01
+* KP-like:   0  -3.47515E+00  7.96935E-02  4.70097E-01
+* KP-like:   0  -3.68411E+00  6.08022E-02  3.75027E-01
+* KP-like:   0  -3.68411E+00  6.08022E-02  3.75027E-01
+* KP-like:   1  -3.68411E+00  6.08022E-02  3.72523E-01
+* KP-like:   2  -3.68411E+00  6.08022E-02  3.74877E-01
+* KP-like:   3  -3.68411E+00  6.08022E-02  3.74070E-01
+* KP-like:   4  -3.68411E+00  6.08022E-02  3.72990E-01
+* KP-like:   5  -3.68411E+00  6.08022E-02  3.75281E-01
+* KP-like:   6  -3.68411E+00  6.08022E-02  3.72787E-01
+* KP-like:   7  -3.68411E+00  6.08022E-02  3.73419E-01
+* KP-like:   8  -3.68411E+00  6.08022E-02  3.75027E-01
+* KP-like:   9  -3.68411E+00  6.08022E-02  3.75027E-01
+* KP-like:  10  -3.68411E+00  6.08022E-02  3.75027E-01
+* KP-like:  11  -3.68411E+00  6.08022E-02  3.75027E-01
+* KP-like:  12  -3.68411E+00  6.08022E-02  3.75027E-01
+* KP-like:  13  -3.68411E+00  6.08022E-02  3.75027E-01
+* KP-like:  14  -3.68411E+00  6.08022E-02  3.75027E-01
+* KP-like:  15  -3.68411E+00  6.08022E-02  3.75027E-01
+* KP-like:  16  -3.68411E+00  6.08022E-02  3.75027E-01
+* KP-like:  17  -3.68411E+00  6.08022E-02  3.75027E-01
+* KP-like:  18  -3.68411E+00  6.08022E-02  3.75027E-01
+* KP-like:  19  -3.68411E+00  6.08022E-02  3.74886E-01
+* KP-like:  20  -2.15631E+00  6.08022E-02  3.75027E-01
+* KP-like:  21  -3.68411E+00  7.56442E-02  4.43566E-01
+* KP-like:   0  -3.68411E+00  6.08022E-02  3.75027E-01
+* KP-like:   0  -3.50066E+00  7.68347E-02  4.51598E-01
+* KP-like:   0  -3.65715E+00  6.25911E-02  3.81772E-01
+* KP-like:   0  -3.71510E+00  5.96155E-02  3.70777E-01
+* KP-like:   0  -3.71510E+00  5.96155E-02  3.70777E-01
+* KP-like:   1  -3.71510E+00  5.96155E-02  3.68485E-01
+* KP-like:   2  -3.71510E+00  5.96155E-02  3.70615E-01
+* KP-like:   3  -3.71510E+00  5.96155E-02  3.69982E-01
+* KP-like:   4  -3.71510E+00  5.96155E-02  3.68884E-01
+* KP-like:   5  -3.71510E+00  5.96155E-02  3.70957E-01
+* KP-like:   6  -3.71510E+00  5.96155E-02  3.68643E-01
+* KP-like:   7  -3.71510E+00  5.96155E-02  3.69278E-01
+* KP-like:   8  -3.71510E+00  5.96155E-02  3.70777E-01
+* KP-like:   9  -3.71510E+00  5.96155E-02  3.70777E-01
+* KP-like:  10  -3.71510E+00  5.96155E-02  3.70777E-01
+* KP-like:  11  -3.71510E+00  5.96155E-02  3.70777E-01
+* KP-like:  12  -3.71510E+00  5.96155E-02  3.70777E-01
+* KP-like:  13  -3.71510E+00  5.96155E-02  3.70777E-01
+* KP-like:  14  -3.71510E+00  5.96155E-02  3.70777E-01
+* KP-like:  15  -3.71510E+00  5.96155E-02  3.70777E-01
+* KP-like:  16  -3.71510E+00  5.96155E-02  3.70777E-01
+* KP-like:  17  -3.71510E+00  5.96155E-02  3.70777E-01
+* KP-like:  18  -3.71510E+00  5.96155E-02  3.70777E-01
+* KP-like:  19  -3.71510E+00  5.96155E-02  3.70631E-01
+* KP-like:  20  -2.18730E+00  5.96155E-02  3.70777E-01
+* KP-like:  21  -3.71510E+00  7.44575E-02  4.36751E-01
+* KP-like:   0  -3.71510E+00  5.96155E-02  3.70777E-01
+* KP-like:   0  -3.51302E+00  7.59920E-02  4.46495E-01
+* KP-like:   0  -3.67417E+00  6.14176E-02  3.77354E-01
+* KP-like:   0  -3.73499E+00  5.85480E-02  3.67081E-01
+* KP-like:   0  -3.73499E+00  5.85480E-02  3.67081E-01
+* KP-like:   1  -3.73499E+00  5.85480E-02  3.64968E-01
+* KP-like:   2  -3.73499E+00  5.85480E-02  3.66907E-01
+* KP-like:   3  -3.73499E+00  5.85480E-02  3.66423E-01
+* KP-like:   4  -3.73499E+00  5.85480E-02  3.65309E-01
+* KP-like:   5  -3.73499E+00  5.85480E-02  3.67198E-01
+* KP-like:   6  -3.73499E+00  5.85480E-02  3.65036E-01
+* KP-like:   7  -3.73499E+00  5.85480E-02  3.65672E-01
+* KP-like:   8  -3.73499E+00  5.85480E-02  3.67081E-01
+* KP-like:   9  -3.73499E+00  5.85480E-02  3.67081E-01
+* KP-like:  10  -3.73499E+00  5.85480E-02  3.67081E-01
+* KP-like:  11  -3.73499E+00  5.85480E-02  3.67081E-01
+* KP-like:  12  -3.73499E+00  5.85480E-02  3.67081E-01
+* KP-like:  13  -3.73499E+00  5.85480E-02  3.67081E-01
+* KP-like:  14  -3.73499E+00  5.85480E-02  3.67081E-01
+* KP-like:  15  -3.73499E+00  5.85480E-02  3.67081E-01
+* KP-like:  16  -3.73499E+00  5.85480E-02  3.67081E-01
+* KP-like:  17  -3.73499E+00  5.85480E-02  3.67081E-01
+* KP-like:  18  -3.73499E+00  5.85480E-02  3.67081E-01
+* KP-like:  19  -3.73499E+00  5.85480E-02  3.66930E-01
+* KP-like:  20  -2.20719E+00  5.85480E-02  3.67081E-01
+* KP-like:  21  -3.73499E+00  7.33900E-02  4.30882E-01
+* KP-like:   0  -3.73499E+00  5.85480E-02  3.67081E-01
+* KP-like:   0  -3.52157E+00  7.52773E-02  4.42290E-01
+* KP-like:   0  -3.68512E+00  6.05261E-02  3.74096E-01
+* KP-like:   0  -3.74576E+00  5.76523E-02  3.64062E-01
+* KP-like:   0  -3.74576E+00  5.76523E-02  3.64062E-01
+* KP-like:   1  -3.74576E+00  5.76523E-02  3.62093E-01
+* KP-like:   2  -3.74576E+00  5.76523E-02  3.63880E-01
+* KP-like:   3  -3.74576E+00  5.76523E-02  3.63514E-01
+* KP-like:   4  -3.74576E+00  5.76523E-02  3.62388E-01
+* KP-like:   5  -3.74576E+00  5.76523E-02  3.64129E-01
+* KP-like:   6  -3.74576E+00  5.76523E-02  3.62090E-01
+* KP-like:   7  -3.74576E+00  5.76523E-02  3.62728E-01
+* KP-like:   8  -3.74576E+00  5.76523E-02  3.64062E-01
+* KP-like:   9  -3.74576E+00  5.76523E-02  3.64062E-01
+* KP-like:  10  -3.74576E+00  5.76523E-02  3.64062E-01
+* KP-like:  11  -3.74576E+00  5.76523E-02  3.64062E-01
+* KP-like:  12  -3.74576E+00  5.76523E-02  3.64062E-01
+* KP-like:  13  -3.74576E+00  5.76523E-02  3.64062E-01
+* KP-like:  14  -3.74576E+00  5.76523E-02  3.64062E-01
+* KP-like:  15  -3.74576E+00  5.76523E-02  3.64062E-01
+* KP-like:  16  -3.74576E+00  5.76523E-02  3.64062E-01
+* KP-like:  17  -3.74576E+00  5.76523E-02  3.64062E-01
+* KP-like:  18  -3.74576E+00  5.76523E-02  3.64062E-01
+* KP-like:  19  -3.74576E+00  5.76523E-02  3.63908E-01
+* KP-like:  20  -2.21796E+00  5.76523E-02  3.64062E-01
+* KP-like:  21  -3.74576E+00  7.24943E-02  4.26126E-01
+* KP-like:   0  -3.74576E+00  5.76523E-02  3.64062E-01
+* KP-like:   0  -3.74576E+00  5.76523E-02  3.64062E-01

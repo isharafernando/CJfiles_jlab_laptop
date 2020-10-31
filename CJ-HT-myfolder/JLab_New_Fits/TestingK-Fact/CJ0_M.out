@@ -1,0 +1,144 @@
+ Correlated errors added in quadrature with statistical errors
+ HerF2pCut  DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors added in quadrature with statistical errors
+ HerF2dCut  DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   WBArel smearing  (AV18) - freepar off-shell nuke corrections
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors added in quadrature with statistical errors
+ slac_p     DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors added in quadrature with statistical errors
+ slac_d     DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   WBArel smearing  (AV18) - freepar off-shell nuke corrections
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ BcdF2pCor  DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ BcdF2dCor  DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   WBArel smearing  (AV18) - freepar off-shell nuke corrections
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ NmcF2pCor  DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ NmcRatCor  DIS data with   1.69< Q2 < 0.500D+03 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+04 and 0.000 < y < 1.000
+   WBArel smearing  (AV18) - freepar off-shell nuke corrections
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ H2_NC_em   DIS data with   1.69< Q2 < 0.100D+06 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+08 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ H2_NC_ep_1 DIS data with   1.69< Q2 < 0.100D+06 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+08 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ H2_NC_ep_2 DIS data with   1.69< Q2 < 0.100D+06 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+08 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ H2_NC_ep_3 DIS data with   1.69< Q2 < 0.100D+06 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+08 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ H2_NC_ep_4 DIS data with   1.69< Q2 < 0.100D+06 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+08 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ H2_CC_em   DIS data with   1.69< Q2 < 0.100D+06 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+08 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors treated separately from statistical errors
+ H2_CC_ep   DIS data with   1.69< Q2 < 0.100D+06 and 0.000 < xB < 1.000 and   3.00< W2 < 0.100D+08 and 0.000 < y < 1.000
+   GP TMC applied
+   HT corrections, multiplicative C=C(xB)
+ Correlated errors added in quadrature with statistical errors
+ e866pp06xf vector boson data with Q2 >=  36.00
+ Correlated errors added in quadrature with statistical errors
+ e866pd06xf vector boson data with Q2 >=  36.00
+ Correlated errors added in quadrature with statistical errors
+ cdfLasy05  vector boson data with Q2 >=   0.00
+ Correlated errors added in quadrature with statistical errors
+ d0Lasy_e15 vector boson data with Q2 >=   0.00
+ Correlated errors added in quadrature with statistical errors
+ d0Lasy13   vector boson data with Q2 >=   0.00
+ Correlated errors added in quadrature with statistical errors
+ CDF_Wasy   vector boson data with Q2 >=   0.00
+ Correlated errors added in quadrature with statistical errors
+ D0_Wasy    vector boson data with Q2 >=   0.00
+ Correlated errors added in quadrature with statistical errors
+ CDF_Z      vector boson data with Q2 >=   0.00
+ Correlated errors added in quadrature with statistical errors
+ D0_Z       vector boson data with Q2 >=   0.00
+ Correlated errors added in quadrature with statistical errors
+ d0run2coneJet data - errors added in quadrature
+ Correlated errors added in quadrature with statistical errors
+ CDFrun2jetJet data - errors added in quadrature
+ Correlated errors added in quadrature with statistical errors
+ d0_gamjet1 Photon data -- cuts to be written yet ...
+ Correlated errors added in quadrature with statistical errors
+ d0_gamjet2 Photon data -- cuts to be written yet ...
+ Correlated errors added in quadrature with statistical errors
+ d0_gamjet3 Photon data -- cuts to be written yet ...
+ Correlated errors added in quadrature with statistical errors
+ d0_gamjet4 Photon data -- cuts to be written yet ...
+
+# fitpack15: fit output
+# CJ15 AV18 final data choices                                                 
+
+Parametrization   7 used here
+
+ S-ACOT scheme used  for NC DIS
+
+ charm mass =     1.30 GeV     bottom mass =     4.50 GeV
+
+
+
+ THIS IS A NEXT TO LEADING ORDER FIT
+
+ Q02=    1.69
+         1  LAMBDA      VALUE=   0.22680      WEIGHT=    0.0000    
+         2  a0uv        VALUE=    2.3582      WEIGHT=    0.0000    
+         3  a1uv        VALUE=   0.61026      WEIGHT=   0.20370E-01
+         4  a2uv        VALUE=    3.5472      WEIGHT=   0.12283E-01
+         5  a3uv        VALUE=    0.0000      WEIGHT=    0.0000    
+         6  a4uv        VALUE=    3.5532      WEIGHT=   0.44812    
+         7  a5uv        VALUE=    0.0000      WEIGHT=    0.0000    
+         8  a0dv        VALUE=    24.904      WEIGHT=    0.0000    
+         9  a1dv        VALUE=    1.1593      WEIGHT=   0.33146E-01
+        10  a2dv        VALUE=    6.6165      WEIGHT=   0.16667    
+        11  a3dv        VALUE=   -3.5152      WEIGHT=   0.88423E-01
+        12  a4dv        VALUE=    4.7073      WEIGHT=   0.15427    
+        13  a5dv        VALUE=    0.0000      WEIGHT=    0.0000    
+        14  a0ud        VALUE=   0.14578      WEIGHT=   0.50606E-02
+        15  a1ud        VALUE=  -0.20825      WEIGHT=   0.37844E-02
+        16  a2ud        VALUE=    8.3222      WEIGHT=   0.18976    
+        17  a3ud        VALUE=    0.0000      WEIGHT=    0.0000    
+        18  a4ud        VALUE=    14.490      WEIGHT=    1.2479    
+        19  a5ud        VALUE=    0.0000      WEIGHT=    0.0000    
+        20  a0du        VALUE=    35712.      WEIGHT=    0.0000    
+        21  a1du        VALUE=    4.0618      WEIGHT=   0.88100E-01
+        22  a2du        VALUE=    20.234      WEIGHT=   0.94625    
+        23  a3du        VALUE=    17.000      WEIGHT=    0.0000    
+        24  a4du        VALUE=    59.846      WEIGHT=    15.050    
+        25  a0g         VALUE=    46.313      WEIGHT=    0.0000    
+        26  a1g         VALUE=   0.60481      WEIGHT=   0.30270E-01
+        27  a2g         VALUE=    6.2498      WEIGHT=   0.90795    
+        28  a3g         VALUE=   -3.3664      WEIGHT=   0.12722    
+        29  a4g         VALUE=    3.2450      WEIGHT=   0.29251    
+        30  a5g         VALUE=    0.0000      WEIGHT=    0.0000    
+        31  kappa       VALUE=   0.40000      WEIGHT=    0.0000    
+        32  a6dv        VALUE=  -0.41389E-02  WEIGHT=   0.77794E-03
+        33  a7dv        VALUE=    2.0000      WEIGHT=    0.0000    
+        34  off1        VALUE=  -0.20655      WEIGHT=   0.10000    
+        35  off2        VALUE=    2.5915      WEIGHT=    1.0000    
