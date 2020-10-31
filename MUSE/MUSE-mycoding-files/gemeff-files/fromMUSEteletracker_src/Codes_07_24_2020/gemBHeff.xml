@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<muse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation='recipe.xsd'>
+
+<!--<init>init/GEMlumi_XY.xml</init> -->
+<init>init/gemControlInit.xml</init>
+
+<source>BH:lumigemcooked</source> <!-- the source tree name-->
+<destination>MUSEteleTracks</destination> <!-- the destination tree name-->
+
+<plugins>
+  <plugin> 
+     <name>MUSEteleTracker</name>
+     <file>libMUSEteleTracker</file>
+  </plugin>
+</plugins>
+
+
+<!-- These functions will be called at the 'very' beginning -->
+<defineHistograms>
+  <MUSEteleTracker>histos_GEMBH_efficiency</MUSEteleTracker>
+</defineHistograms>
+
+<!-- These functions will be called at the beginning --> 
+<startup>
+ <MUSEteleTracker>startup_GEMBH_efficiency</MUSEteleTracker>
+</startup>
+
+<!-- These functions will be executed for every event, in order of appearance -->
+<execute>
+ <MUSEteleTracker>process_GEMBH_efficiency</MUSEteleTracker>
+</execute>
+
+<!-- These functions will be called at the end of the file --> 
+<finalize>
+ <MUSEteleTracker>finalize_GEMBH_efficiency</MUSEteleTracker>
+</finalize>
+
+</muse>

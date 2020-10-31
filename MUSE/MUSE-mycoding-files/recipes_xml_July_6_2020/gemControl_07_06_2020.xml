@@ -1,0 +1,55 @@
+<<<<<<< HEAD
+           xsi:noNamespaceSchemaLocation='recipe.xsd'>
+
+<init>init/gemControlInit.xml</init>
+
+<source>MMT</source> <!-- the source tree name-->
+<destination>lumigemcooked</destination> <!-- the destination tree name-->
+
+<plugins>
+  <plugin>
+     <name>gemControl</name>
+     <file>libgemControl</file>
+  </plugin>
+</plugins>
+
+<!-- These functions will be called at the 'very' beginning -->
+<defineHistograms>
+<gemControl>defineHistograms</gemControl>
+</defineHistograms>
+
+<!-- These functions will be called at the beginning -->
+<startup>
+ <gemControl>startup</gemControl>
+<!-- <gemControl>defineHistograms</gemControl> -->
+<!-- <gemControl>CmodeSelection</gemControl> -->
+<gemControl>initPedestal</gemControl>
+</startup>
+
+
+<!-- These functions will be executed for every event, in order of appearance -->
+<execute>
+<gemControl>determineCommonMode</gemControl> <!-- needed by "determinePedestal" routing! -->
+<!--<gemControl>setNoCommonMode</gemControl>--> <!-- needed by "determinePedestal" routing! -->
+ <gemControl>determinePedestal</gemControl>
+</execute>
+
+<postprocess>
+  <gemControl>dumpPedestalInfo</gemControl> <!-- rough pedestals w/o cmode -->
+  <gemControl>readPedestal</gemControl>
+</postprocess>
+
+<!--second pass through the data-->
+<execute2>
+  <gemControl>determineCommonMode</gemControl> <!-- needed by "process_avg" routing! -->
+<!--  <gemControl>setNoCommonMode</gemControl>--> <!-- needed by "determinePedestal" routing! -->
+  <gemControl>readCommonMode</gemControl><!-- needed by "process_avg" routing! Should be done after "determineCommonMode"  -->
+  <gemControl>process_avg</gemControl>
+</execute2>
+
+<!-- These functions will be called at the end of the file -->
+<finalize>
+ <gemControl>finalize</gemControl>
+</finalize>
+
+=======
