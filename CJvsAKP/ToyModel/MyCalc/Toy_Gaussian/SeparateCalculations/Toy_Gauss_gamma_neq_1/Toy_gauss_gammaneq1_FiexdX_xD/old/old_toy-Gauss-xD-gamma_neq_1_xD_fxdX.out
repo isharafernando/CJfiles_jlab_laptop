@@ -1,0 +1,204 @@
+ No correlated errors used
+ test_SK_fixedX       DIS data with   1.00< Q2 < 0.100D+04 and 0.000 < xB < 1.000 and   0.90< W2 < 0.100D+10 and 0.000 < y < 1.000
+ !! Use toy model F2 = (1-x)^3 !!
+   WBArel smearing  (test wf) nuke corrections
+     Use Pv cut of         1000  MeV
+   No TMC applied
+   no HT corrections
+
+# fitpack15: fit output
+# CJ15 AV18 final data choices                                                 
+
+Parametrization   7 used here
+
+ S-ACOT scheme used  for NC DIS
+
+ charm mass =     1.00 GeV     bottom mass = ******** GeV
+
+
+
+ THIS IS A LEADING ORDER FIT
+
+ Q02=    1.00
+         1  LAMBDA                VALUE=   0.22680      WEIGHT=    0.0000    
+         2  a0uv                  VALUE=   0.88819E-01  WEIGHT=    0.0000    
+         3  a1uv                  VALUE=    0.0000      WEIGHT=   0.20395E-01
+         4  a2uv                  VALUE=    3.0000      WEIGHT=   0.12297E-01
+         5  a3uv                  VALUE=    0.0000      WEIGHT=    0.0000    
+         6  a4uv                  VALUE=    0.0000      WEIGHT=   0.43683    
+         7  a5uv                  VALUE=    0.0000      WEIGHT=    0.0000    
+         8  a0dv                  VALUE=   0.44410E-01  WEIGHT=    0.0000    
+         9  a1dv                  VALUE=    0.0000      WEIGHT=   0.33842E-01
+        10  a2dv                  VALUE=    3.0000      WEIGHT=   0.15967    
+        11  a3dv                  VALUE=    0.0000      WEIGHT=   0.87255E-01
+        12  a4dv                  VALUE=    0.0000      WEIGHT=   0.14394    
+        13  a5dv                  VALUE=    0.0000      WEIGHT=    0.0000    
+        14  a0ud                  VALUE=    0.0000      WEIGHT=   0.50263E-02
+        15  a1ud                  VALUE=    0.0000      WEIGHT=   0.37519E-02
+        16  a2ud                  VALUE=    0.0000      WEIGHT=   0.18523    
+        17  a3ud                  VALUE=    0.0000      WEIGHT=    0.0000    
+        18  a4ud                  VALUE=    0.0000      WEIGHT=    1.2107    
+        19  a5ud                  VALUE=    0.0000      WEIGHT=    0.0000    
+        20  a0du                  VALUE=    0.0000      WEIGHT=    0.0000    
+        21  a1du                  VALUE=    0.0000      WEIGHT=   0.71322E-01
+        22  a2du                  VALUE=    0.0000      WEIGHT=   0.86082    
+        23  a3du                  VALUE=    0.0000      WEIGHT=    0.0000    
+        24  a4du                  VALUE=    0.0000      WEIGHT=    9.0827    
+        25  a0g                   VALUE=    113.25      WEIGHT=    0.0000    
+        26  a1g                   VALUE=   0.60307      WEIGHT=   0.31731E-01
+        27  a2g                   VALUE=    6.4812      WEIGHT=    1.0043    
+        28  a3g                   VALUE=   -3.3064      WEIGHT=   0.13891    
+        29  a4g                   VALUE=    3.1721      WEIGHT=   0.30059    
+        30  a5g                   VALUE=    0.0000      WEIGHT=    0.0000    
+        31  kappa                 VALUE=    0.0000      WEIGHT=    0.0000    
+        32  a6dv                  VALUE=  -0.36574E-02  WEIGHT=   0.67517E-03
+        33  a7dv                  VALUE=    2.0000      WEIGHT=    0.0000    
+        34  off1                  VALUE=   -3.5009      WEIGHT=    1.4769    
+        35  off2                  VALUE=   0.56166E-01  WEIGHT=   0.58667E-01
+        36  ht1                   VALUE=   -3.2479      WEIGHT=   0.26672    
+        37  ht2                   VALUE=    1.9154      WEIGHT=   0.10687    
+        38  ht3                   VALUE=   -2.0748      WEIGHT=   0.22824E-01
+        39  ht4                   VALUE=    0.0000      WEIGHT=    0.0000    
+        40  dummy40               VALUE=    0.0000      WEIGHT=    0.0000    
+        41  dummy41               VALUE=    0.0000      WEIGHT=    0.0000    
+        42  dummy42               VALUE=    0.0000      WEIGHT=    0.0000    
+        43  dummy43               VALUE=    0.0000      WEIGHT=    0.0000    
+        44  dummy44               VALUE=    0.0000      WEIGHT=    0.0000    
+        45  dummy45               VALUE=    0.0000      WEIGHT=    0.0000    
+        46  dummy46               VALUE=    0.0000      WEIGHT=    0.0000    
+        47  dummy47               VALUE=    0.0000      WEIGHT=    0.0000    
+        48  dummy48               VALUE=    0.0000      WEIGHT=    0.0000    
+        49  dummy49               VALUE=    0.0000      WEIGHT=    0.0000    
+        50  bcdmsh2               VALUE=   0.97285      WEIGHT=   0.48427E-02
+        51  bcdmsd2               VALUE=   0.99317      WEIGHT=   0.57972E-02
+        52  ccfr                  VALUE=    1.0000      WEIGHT=    0.0000    
+        53  nutev                 VALUE=    1.0000      WEIGHT=    0.0000    
+        54  zeus                  VALUE=   0.97998      WEIGHT=    0.0000    
+        55  h1                    VALUE=    1.0162      WEIGHT=    0.0000    
+        56  e605                  VALUE=    1.0319      WEIGHT=    0.0000    
+        57  NmcH2                 VALUE=    1.0095      WEIGHT=   0.71200E-02
+        58  ntv_nu                VALUE=    1.0000      WEIGHT=    0.0000    
+        59  ntv_nubar             VALUE=    1.0000      WEIGHT=    0.0000    
+        60  cdf_jet               VALUE=   0.98910      WEIGHT=    0.0000    
+        61  d0_jet                VALUE=   0.83504      WEIGHT=    0.0000    
+        62  slac_p                VALUE=    1.0048      WEIGHT=   0.48232E-02
+        63  slac_d                VALUE=    1.0042      WEIGHT=   0.52625E-02
+        64  e866pp                VALUE=   0.96438      WEIGHT=   0.19188E-01
+        65  e866pd                VALUE=   0.96857      WEIGHT=   0.16516E-01
+        66  d0_gamjet             VALUE=    1.0391      WEIGHT=   0.16482E-01
+        67  h1b                   VALUE=   0.97608      WEIGHT=    0.0000    
+        68  jlab_p                VALUE=   0.99439      WEIGHT=   0.57989E-02
+        69  jlab_d                VALUE=   0.97560      WEIGHT=   0.58777E-02
+        70  blank                 VALUE=    1.0000      WEIGHT=    0.0000    
+        71  d0run2                VALUE=   0.94153      WEIGHT=   0.14203E-01
+        72  cdfrun2               VALUE=   0.92693      WEIGHT=   0.17236E-01
+        73  HERA_el               VALUE=    1.0000      WEIGHT=    0.0000    
+        74  HERA_ps               VALUE=    1.0000      WEIGHT=    0.0000    
+        75  CDF_Z                 VALUE=   0.96573      WEIGHT=   0.64152E-02
+        76  NmcRat                VALUE=    1.0000      WEIGHT=    0.0000    
+        77  BNS_F2nd              VALUE=   0.98244      WEIGHT=   0.67043E-02
+        78  HERMES_F2p            VALUE=   0.99812      WEIGHT=   0.55759E-02
+        79  HERMES_F2d            VALUE=   0.98034      WEIGHT=   0.58160E-02
+0THE TOLERANCE IS    0.5000
+ THE MAXIMUM NUMBER OF STEPS IS 100
+0THE INITIAL CHI SQUARED IS  3.99735E+01
+
+
+
+     X        Q2         W2       THEORY        error         DATA           ERROR        chi^2     _w    ITYPE
+.2000E+00     1.690  0.764E+01   0.98847E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.79         test_SK_fixedX      
+.4000E+00     1.690  0.342E+01   0.97763E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.77         test_SK_fixedX      
+.6000E+00     1.690  0.201E+01   0.10104E+01   0.00000E+00   0.10000E+00    0.10000E+01    0.83         test_SK_fixedX      
+.7000E+00     1.690  0.161E+01   0.11333E+01   0.00000E+00   0.10000E+00    0.10000E+01    1.07         test_SK_fixedX      
+.8000E+00     1.690  0.130E+01   0.16146E+01   0.00000E+00   0.10000E+00    0.10000E+01    2.29         test_SK_fixedX      
+.2000E+00     2.000  0.888E+01   0.98836E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.79         test_SK_fixedX      
+.4000E+00     2.000  0.388E+01   0.97786E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.77         test_SK_fixedX      
+.6000E+00     2.000  0.222E+01   0.10085E+01   0.00000E+00   0.10000E+00    0.10000E+01    0.83         test_SK_fixedX      
+.7000E+00     2.000  0.174E+01   0.11225E+01   0.00000E+00   0.10000E+00    0.10000E+01    1.05         test_SK_fixedX      
+.8000E+00     2.000  0.138E+01   0.15683E+01   0.00000E+00   0.10000E+00    0.10000E+01    2.16         test_SK_fixedX      
+.2000E+00     5.000  0.209E+02   0.98801E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.79         test_SK_fixedX      
+.4000E+00     5.000  0.838E+01   0.97819E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.77         test_SK_fixedX      
+.6000E+00     5.000  0.422E+01   0.10015E+01   0.00000E+00   0.10000E+00    0.10000E+01    0.81         test_SK_fixedX      
+.7000E+00     5.000  0.302E+01   0.10839E+01   0.00000E+00   0.10000E+00    0.10000E+01    0.97         test_SK_fixedX      
+.8000E+00     5.000  0.213E+01   0.14021E+01   0.00000E+00   0.10000E+00    0.10000E+01    1.70         test_SK_fixedX      
+.2000E+00    10.000  0.409E+02   0.98789E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.79         test_SK_fixedX      
+.4000E+00    10.000  0.159E+02   0.97818E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.77         test_SK_fixedX      
+.6000E+00    10.000  0.755E+01   0.99853E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.81         test_SK_fixedX      
+.7000E+00    10.000  0.517E+01   0.10697E+01   0.00000E+00   0.10000E+00    0.10000E+01    0.94         test_SK_fixedX      
+.8000E+00    10.000  0.338E+01   0.13401E+01   0.00000E+00   0.10000E+00    0.10000E+01    1.54         test_SK_fixedX      
+.2000E+00    20.000  0.809E+02   0.98783E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.79         test_SK_fixedX      
+.4000E+00    20.000  0.309E+02   0.97818E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.77         test_SK_fixedX      
+.6000E+00    20.000  0.142E+02   0.99694E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.80         test_SK_fixedX      
+.7000E+00    20.000  0.945E+01   0.10621E+01   0.00000E+00   0.10000E+00    0.10000E+01    0.93         test_SK_fixedX      
+.8000E+00    20.000  0.588E+01   0.13076E+01   0.00000E+00   0.10000E+00    0.10000E+01    1.46         test_SK_fixedX      
+.2000E+00    50.000  0.201E+03   0.98780E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.79         test_SK_fixedX      
+.4000E+00    50.000  0.759E+02   0.97817E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.77         test_SK_fixedX      
+.6000E+00    50.000  0.342E+02   0.99597E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.80         test_SK_fixedX      
+.7000E+00    50.000  0.223E+02   0.10574E+01   0.00000E+00   0.10000E+00    0.10000E+01    0.92         test_SK_fixedX      
+.8000E+00    50.000  0.134E+02   0.12874E+01   0.00000E+00   0.10000E+00    0.10000E+01    1.41         test_SK_fixedX      
+.2000E+00   100.000  0.401E+03   0.98778E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.79         test_SK_fixedX      
+.4000E+00   100.000  0.151E+03   0.97817E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.77         test_SK_fixedX      
+.6000E+00   100.000  0.675E+02   0.99564E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.80         test_SK_fixedX      
+.7000E+00   100.000  0.437E+02   0.10558E+01   0.00000E+00   0.10000E+00    0.10000E+01    0.91         test_SK_fixedX      
+.8000E+00   100.000  0.259E+02   0.12805E+01   0.00000E+00   0.10000E+00    0.10000E+01    1.39         test_SK_fixedX      
+.2000E+00  1000.000  0.400E+04   0.98777E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.79         test_SK_fixedX      
+.4000E+00  1000.000  0.150E+04   0.97817E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.77         test_SK_fixedX      
+.6000E+00  1000.000  0.668E+03   0.99534E+00   0.00000E+00   0.10000E+00    0.10000E+01    0.80         test_SK_fixedX      
+.7000E+00  1000.000  0.429E+03   0.10544E+01   0.00000E+00   0.10000E+00    0.10000E+01    0.91         test_SK_fixedX      
+.8000E+00  1000.000  0.251E+03   0.12743E+01   0.00000E+00   0.10000E+00    0.10000E+01    1.38         test_SK_fixedX      
+
+
+
+ CHI SQUARE=   39.97 FOR   40 POINTS   CHISQ/NPTS=    1.00
+ Signed chisquare total =   39.97
+ Modified residual =  -43.92
+
+
+Summary normalization chi2 contributions
+
+ data set     normalization        error         chisq
+
+
+Summary chi2 per data set
+
+ data set      chisq    _w     signd    _w     resid     _w   npts   chisq/pts  _w
+test_SK_fi      40.0            40.0           -43.9            40    1.00
+------------------------------------------------------------------------------------
+TOTAL           40.0    40.0    40.0     0.0   -43.9   -43.9    40    1.00    1.00
+TOTAL+norm      40.0    40.0                                    40    1.00    1.00
+
+
+
+            Momentum Sum Rule Check
+
+
+      q2      alphas      xuv       xdv       xub       xdb       xsb       xcb       xbb      xglue     total
+      1.00    1.6983    0.0022    0.0011    0.0000    0.0000    0.0000    0.0000    0.0000    0.0964    0.0998
+    100.00    0.2745    0.0112    0.0056    0.0696    0.0696    0.0696    0.0696    0.0000    0.6744    0.9698
+   1000.00    0.1934    0.0096    0.0048    0.0768    0.0768    0.0768    0.0768    0.0000    0.6306    0.9520
+   8315.00    0.1521    0.0086    0.0043    0.0803    0.0803    0.0803    0.0803    0.0000    0.6039    0.9378
+
+
+ Vector Boson Cross Sections
+
+ sqrt(s)   sigma(W)    error    theory
+
+   1960.     2.865     0.063       0.510     D0
+
+   1960.     2.749     0.054       0.510     CDF
+
+   7000.     9.95      0.29       11.599     CMS
+
+   7000.     9.96      0.55       11.599     ATLAS
+
+ sqrt(s)   sigma(Z)    error    theory
+
+   1960.     .2649     .0094       0.035     D0
+
+   1960.     .2549     .0057       0.035     CDF
+
+   7000.     .931      0.035       0.892     CMS
+
+   7000.     .82       0.08        0.892     ATLAS
+
+
