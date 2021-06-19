@@ -1,0 +1,5 @@
+tstfit_v1 input_fit_C61_e866_gomez accept #
+tstfit_v2 input_fit_C61_e866_gomez_GP_cut02 no_accept #
+tstfit_v3 input.fit_C61_e866_gomez_CF_cut02_HT accept #
+tstfit_v4 input_fit_gamjet_22para_two accept #
+tstfit_v5 input_tst_C61_e866_gomez reject #

@@ -1,0 +1,409 @@
+ -----------------------------------------------------
+
+                   CJ fitting package
+
+       (Jeff Owens' PDF global fitting package
+         with extensions for large x studies
+	         and many other things)
+
+ -----------------------------------------------------
+
+In the "summary" you can find a short introduction to the fitting
+package, and a series of tests. Eventually, this summary will evolve
+in a more complete introduction to the code. More details and a 
+description of the input file can be found on the CJ e-log
+
+The "history" section summarizes the evolution of the code up to 2010. 
+The rest can be found on the CJ e-log, fitting section.
+
+I also added a collection of (slightly edited) e-mails from Jeff,
+briefly explaining how to get started with his fitting package. They
+all refer to the "May 2008" version of the fitting package checked in
+in the cvs repository on Aug 12, 2008. But the main gist still holds,
+if not teh detail.
+
+	Alberto Accardi
+	(31 March 2016)
+
+
+
+--------------------------------------------------------
+SUMMARY
+--------------------------------------------------------
+
+The program that drives the fit is 'theory/altpfit15.f', which
+is what a general user may want to modify. It reads in a
+user-specified input file, which contains the data sets to be fitted,
+the initial PDF parameters and which ones should be considered free or
+fixed. It produces 3 output files:
+1) ##.out, with the results of the fit iterations, theory vs. data for
+each data set, and fitted pdf evaluated at 5 chosen Q^2;
+2) ##.pdf, with the pdf at selected Q^2 values including the "PDF error band".
+Note that ## is automatically determined by the name of the input file.
+If the input file ends with .dat, the suffix will be removed first.
+3) ##.par, contains the final list of parameters from the fit
+
+
+Before running the code, make sure to define the following environment
+variables (I assume you are using the bash shell):
+
+  > export cteqx='/home/.../fitpack/'
+
+where the ... stand for the path where you put saved your copy of
+fitpack, and it is assumed that the whole package was downloaded in a
+'fitpack' folder. The fits can then be run from whatever folder you choose 
+to work in, and not necessarily in the fitpack folder. 
+The export line may be placed in your .bashrc file, to define the variables 
+in any terminal instance. But you may also define a different ones to run 
+different versions of the code, if you so wish.
+
+
+To run the code:
+
+1) from the main folder,
+
+   > make tstfit16; cp tstfit16 your_fav_folder/
+
+   (You can run the code in any folder of your choice.)
+   (tstfit16_nuke is the development version as of 31/3/16)
+
+2) From your_fav_folder
+
+   > tstfit13_nuke <input_file> 
+
+   (you may avoid the .dat extension in the <input_file>: it is 
+   added automatically)
+
+3) the output files are:
+     <input_file>.out
+     <input_file>.pdf
+     <input_file>.par
+
+
+-------------------------
+NOTES ON PREVIOUS VERSIONS
+--------------------------
+
+NOTE: (2014 and earlier versions) 
+Previous to Feb 9, 2015, the environment variables were 3:
+
+  > export cteqx_dat='/home/.../fitpack/data'
+  > export cteqx_nucl='/home/.../fitpack/nucl'
+  > export cteqx_fastnlo='/home/.../fitpack/theory'
+
+------------------------
+  TESTING THE PACKAGE
+------------------------
+
+To test the package (2016 version or CJ15 release 'fitpack_2015):
+
+1) Copy the executable in the folder 'tests/fitpack_2016/'
+2) Run manually the code with the provided .dat files;
+3) check the output against the corresponding *_test files
+   (some formatting may change during development, but the
+    cross sections and errors shoudl be the same in both files)
+
+
+To test the package (2011 version)
+
+1) Copy the executable in the folder 'tests/fitpack10/'
+   and run manually the code with the provided .dat files; then check
+   the output against the *_test files
+
+
+To test the package (2010 version)
+
+1) For a quick test, try from the main folder
+
+   > make quick_test_10
+
+   a 'kdiff3' window will pop-up at the ned of the run showing you the
+   differences with 'comp.CTEQ6X.out_test'. This run uses the standard
+   CTEQ6X PDFs and computes the 6X data set -- no fit is performed.
+
+2) For a a test of the fits you can run
+
+   > make test_10
+
+   which runs the 'free', 'dmc', 'wba' and 'wba+mst' fits described in
+   the CTEQ6X paper. It may take quite some time to complete. At the
+   end of each fit, a kdiff3 windows pops-up as in point 1.
+
+3) Alternatively, copy the executable in the folder 'tests/fitpack10/'
+   and run manually the code with the provided .dat files
+
+
+Test for the 2008 version:
+
+1) As in point 1 of teh 2010 version but issuing:
+
+   > make test_08
+
+
+Tests for older version are no longer supported.
+
+
+
+--------------------------------------------------------
+HISTORY of package versions
+--------------------------------------------------------
+
+Check our e-log at https://hallcweb.jlab.org/elogs/High+X+Fitting/
+for release notes and help files (such as a description of the INPUT FILE)
+
+Very shortly:
+
+April 2016  ----- MAIN TRUNK ------
+
+   COMPILE: make tstfit16
+
+   This is a Development trunk startign from fitpack_2015
+
+   * Cleaning up unused / old / and _aa _bb ... version of files
+   * updated GETTING_STARTED file
+   * ... and more to come ...
+
+March 2016            ----- fitpack_2015 BRANCH -----
+            ********* CJ15 PACKAGE used in the paper **********
+
+   BRANCH tag: 'fitpack_2015'
+   COMPILE: make CJ15fit
+
+   * Full debug of off-shell corrections
+   * KP-like pure offshell parametrization added
+   * Offshell corrections for DY dileptons tested
+
+   * Some subtle bug on /param/ vs. /curpar/ common blocks fixed
+    (/param/ is what users may access; /curpar/ is a under-the-hood
+     common block used by 'minim15'; please don't touch! )
+
+   * New option to calculate observables with error bands after a fit
+
+   * added a verbosity level to the output from 'minim15'
+     (must be selected in minim15.f and then recopiled)
+
+   NOTE: this still conatins many ###_aa _bb _cc versioned files
+         used for development, but not usedin the compilation.
+	 Just ignore these.
+
+
+[... version between 2011 and 2015 documented on e-log ...]
+
+
+March 2010 ---- MAIN TRUNK ----
+
+   * HERA combined data
+   * FASTNLO implementation, RUN-II tevatron jet data added
+   * expereimenting with parametrization
+   * ...and more in progress....
+
+
+10 March 2010
+
+	------------ RELEASE fitpack v11.02  -----------------
+            package used for the "d uncertaities" paper
+            arXiv:1102.3686
+	------------------------------------------------------
+   Package used for arXiv:1102.3686 fits, modifications include
+   * fixing a bug in TMC CF corrections
+   * add new smearing corrections as described in the paper
+   * other stuff I don't remember (...)
+
+   * This release can be checked out from the 'RB_11_02'
+
+
+17 May 2010
+	------------ RELEASE fitpack v10.05  -----------------
+    	     from now on the '08_hix' version of teh code
+             will no longer be maintained, though it is
+	     functional, and was used in teh CTEQ6X fits
+	------------------------------------------------------
+   * new QCD evolution, finer x grid
+   * chi^2 reweighting allowed (see util/chi2.f)
+   * chi^2 computation decoupled from rest of the code
+   * new summary table layout with reweighted chi^2 if needed.
+   * bug in d' eextended valence d parametrization and normalization fixed
+
+   * This release can checked out from CVS from the 'RB_10_05' branch
+
+
+09 Jul 2009 - Extended d-quark parametrization for finite d/u as x->1
+          ------------ NOTE NOTE NOTE -----------------
+    	    Only the 'hix' version has been modified
+            (other versions are no longer maintained)
+	  ---------------------------------------------
+   * New d-quark: d' = d + xp(32) * x**xp(33) * u
+   * Multiple nuclear corrections can be run with a single input file
+   * Minor bug fixes
+
+04 Mar 2009 -
+          ------------ NOTE NOTE NOTE -----------------
+    	     from now on only the 'hix' version
+              of the code will be maintained
+	  ---------------------------------------------
+   * Improved precision for DGLAP evolution at large-x
+   * Previous known bugs fixed
+   * TMC+HT for FL & F3
+   * Off-shell corrections a la MST
+   * note: no deuterium corrections for neutrino F3.
+   * FL computation added (istruc=0) but not tested
+
+20 Feb 2009 - Nuclear smearing works well
+   * minor bug fixes
+   * BUG: light-cone smearing function not normalized to 1
+
+14 Jan 2009 - Working smearing model deuteron corrections
+   * Smearing model deuteron corrections implemented, working and tested
+     BUG: smearing does not work at xB<0.01
+   * Density model corrections reimplemented
+
+10 Dec 2008 - Smearing model deuteron corrections
+   * Smearing model deuteron corrections implemented
+     The fit is now driven by 'altpfit08.f'
+   * Density model corrections temporarily disabled
+     - They will be reimplemented soon
+   * Wally corrections removed
+
+02 Dec 2008 - This is the '2008' version of fitpack:
+   * New d/u parametrization, structure function routine (Note change
+     in input file: parameter #32 is A6(d) - A6(d)=0 gives CTEQ6.1
+     parametrization)
+   * Computation of DIS structure functions made more modular.
+   * New test files in 'fitting08' folder
+
+22 Sep 2008 - Higher-Twist corrections (for F2 elm only)
+   * the HT parametrization reads
+	F2(data) = F2(TMC) * (1 + C(x)/Q^2)
+     where
+	C(x) = a * x^b * (1+c*x) * (1-x)^d
+    The parameters {a,b,c,d} are called {ht1,ht2,h3,ht4} in teh input
+    file. They are independent of their position on the
+    list. In the current examples they occupy positions #31-#35.
+    The HT term can be switched on by the last number in the list of
+    flags for each data set:
+     0 = no HT
+     1 = HT with x=xB
+    11 = HT with x=xi
+
+
+12 Sep 2008 - More small mods to out files.
+
+
+ 5 Sep 2008 - A few mods to out files, corrected bugs in previous CVS check-in.
+   * TMC in col.fact. where actually not included before by mistake.
+     They now are included.
+   * the ##.out file now contains a summary of chi^2 before
+     normalizations (and without correlated errors). Slight
+     improvements here and there.
+
+
+14 Aug 2008 - TMC and output files:
+   * added TMC in col.fact and OPE formalisms for DIS from
+     Alberto's code of June 2008.
+   * PDF samples moved from ##.out to ##.pdf
+   * Format of ##.pdf changed: it now contains PDF and errors for 5
+     values of Q^2 (chosen in altpfit.f)
+
+
+13 Aug 2008 - Modifications sent by Jeff in Aug 2008:
+   * Gamma+jet cross sections and data set added
+   * It also has a routine (pdfband) to compute PDF errors. An example is
+    written in output as ##.pdf
+
+
+12 Aug 2008 - Original package sent by Jeff in May 2008. It should
+  produce fits equivalent to CTEQ6.1
+
+
+
+--------------------------------------------------------
+ORIGINAL E-MAILS
+--------------------------------------------------------
+
+ Subj: fitting package
+
+ From: Jeff Owens <owens@hep.fsu.edu>
+ To:   keppel@jlab.org, accardi@jlab.org
+ Date: 2008-05-09 09:33
+
+Hi Thia and Alberto,
+
+As promised in my last email, here is the fitting package. [...]
+Once you have unpacked it, the makefile should make the
+executable 'tstfit_cross' which will be in the 'fitting' directory. The
+file 'input.dat' controls the fitting. Copy 'input.fit_C61_e866_gomez'
+to 'input.dat', and change the first
+line of this file to put your output in a file such as 'new_test.dat' or
+whatever you want. As it stands the input file made the file
+tst_C61_new_exp_data_low_x.out and you wouldn't want to overwrite it. That
+way you can check that your implementation gives the same results as mine.
+
+There is no manual for this package. [...] There are some comments in
+various sections of the code.  I write pretty plain
+FORTRAN, so you can probably figure out a lot of it just by looking at the
+code. Don't laugh too hard - some of this code goes back to the late 70's.
+You can tell because much ot it is written IN ALL CAPS. And some routines
+even have numbers typed into the columns past #72 - this was to help
+resort the cards in case you dropped the card deck!
+
+alpfit02.f - master control file for I/O and fitting
+altpar02.f - evolution routines
+theory02_cross.f - theory routines for DIS, Drell-Yan, and W lepton
+asymmetry
+
+Cheers,
+
+Jeff
+
+--------------------------------------------------------
+
+ Subj: More sample runs
+
+ From: Jeff Owens <owens@hep.fsu.edu>
+ To:   keppel@jlab.org, accardi@jlab.org
+ Date: 2008-05-09 14:38
+
+Thia and Alberto,
+
+    Attached is an input file [input_tst_C61_e866_gomez] with its
+generated output [tst_C61_e866_gomez.test] where I have
+eliminated heavy target data, added e866, and fitted the normalizations.
+Note: I moved the SLAC normalization parameters in the list. They were at
+#34 and $35, but they should have been higher. The reason is that
+parameters #1-#35 cause the evolution to be redone if they are varied,
+i.e. these parameters are reserved for pdf parameters. From 36-60 are for
+parameters which don't require the evolution to be rerun, e.g.,
+normalizations.
+
+Jeff
+
+--------------------------------------------------------
+
+  Subj: Example fit
+
+  From: Jeff Owens <owens@hep.fsu.edu>
+  To:	keppel@jlab.org, alberto@jlab.org
+  Date: Fri, 9 May 2008 14:47:20 -0400 (EDT)
+
+Thia and Alberto,
+
+    I removed the old CDF lepton asymmetry data (cdfLasy) since it has been
+superceded by the newer sets. I opened up the fitting parameters on the PDFs.
+Twenty paras were varied (plus normalizations). THese are the 20 paras refered
+to in the original CTEQ6 "20 para" fit. The parametrization used here is the
+same as CTEQ6. You will see that the fits are generally quite good. I
+would say that the output paras here woudl serve as a good starting
+point for your studies of JLAB data, varying cuts, etc.
+
+[The new input and output files are:
+  input_fit_C61_e866_gomez
+  fit_C61_e866_gomez.out            ]
+
+Note: the numerical approximatinos made in the package are not
+reliable at x  very close to 1. You will see that the very small sea
+terms there will occasionally become negative. If needed at some point
+we can investigate how to increase the accuracy very close to x=1.
+
+Cheers,
+
+Jeff

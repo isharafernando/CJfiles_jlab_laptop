@@ -1,0 +1,34 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+!libmathlib64.a
+!libmathlib.a
+*.lib
+
+# Executables
+CJ15fit
+CJ15_nmsr
+tstfit16
+*.exe
+#*.out ### in fact, .out is an output file of fitpack - we need to keep this
+*.app

@@ -1,0 +1,16 @@
+--------------------------
+ PDFerr - folder contents
+--------------------------
+
+(Updated: 26 July 2015)
+
+Programs to create error PDF sets in CJ and LHAPDF formats, 
+and to use CJ native PDF grids.
+
+PDFerr.f:    Creates the PDF error sets given an input .par file
+	     (works with both CJ12 and CJ15 .par formats)
+
+CJpdf.f:     Interpolator of the CJ native .tbl PDF grid files
+
+tst_CJPDF.f: Simple test of CJpdf.f
+

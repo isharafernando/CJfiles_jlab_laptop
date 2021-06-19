@@ -1,0 +1,56 @@
+-------------------
+SPECIAL SETS FOLDER
+-------------------
+
+Contains artificial data sets to be used to calculate tehory observables.
+This folder to be stored in CVS; the files can be copied or linked to the
+parent "data/" folder whenever needed, but the copies or links are not to
+be added to CVS.
+
+--------------------
+List of special sets:
+---------------------
+
+
+Gottfried sum rule set [November 2015]
+--------------------------------------
+
+*** GSR_data_* = various experimental x,Q^2 bins 
+*** GSR_cntr_* = same as above, but Q^2 is bin centered.
+
+They include the kinematics of
+1 =
+2 =
+3 =
+4 = BONUS 2014
+
+The files with different suffixes p,n,D are actually identical,
+but are useful to separate whatis what in the .out file of a given
+calculation.
+
+(Created for analysis of Gottfried sum rule using BONUS F2 data
+in collaboration with I.Niculescu, C.Keppel, W.Melnitchouk.)
+
+Can be used for any structure function calculation
+
+
+Generic DIS calculation sets  (2010-2015)
+----------------------------
+
+*** F2_fxtgt = BCDMS-like x binning for F2 data vs. theory 
+               summary plot of fixed target data
+	       50 Q2 bins logarithmic in [1.7,500] GeV^2
+
+*** test_DN = fine grid in x=[0.01,0.97] deltax=0.01
+                          Q2= 2, 5, 10, 50, 100 GeV^2
+
+*** test_DIS = coarser grid in x=[0.1,0.95] deltax=0.05
+                               Q2= 3, 5, 6, 7, 12, 20, 50, 100
+
+*** test_d = only 2 bins for debuggingpurposes
+             (x=0.3,Q2=2 GeV^2) and (x=0.5,Q2=2.5 GeV^2)
+
+(test_DIS initially used for QHD and isospin dependence of HT studies
+with S.Malace, ca. 2010-2011. Extended, modified 2012-2015.)
+
+Can be used for any structure function calculation.

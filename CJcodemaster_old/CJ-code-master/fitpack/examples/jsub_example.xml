@@ -1,0 +1,33 @@
+<Request>
+   <Email email="peter@jlab.org" request="false" job="true"/>
+   <Project name="cteqX"/>
+   <Track name="reconstruction"/>
+   <Name name="cteqfit"/>
+
+   <Variable name="dir" value="file:/group/cteqX/peter/"/>
+   <Variable name="fitdir" value="file:/group/cteqX/peter/fitpack/fitting/"/>
+   <Variable name="datadir" value="file:/group/cteqX/peter/fitpack/data/"/>
+   <Variable name="theorydir" value="file:/group/cteqX/peter/fitpack/theory/"/>
+   <Variable name="utildir" value="file:/group/cteqX/peter/fitpack/util/"/>
+   <Variable name="nucldir" value="file:/group/cteqX/peter/fitpack/nucl/"/>
+   <Variable name="outdir" value="file:/group/cteqX/peter/output/"/>
+
+   <Input src="${fitdir}/tstfit_v1" dest="tstfit_v1"/>
+   <Input src="${fitdir}/input_fit_C61_e866_gomez" dest="input_fit_C61_e866_gomez"/>
+
+   <Memory space="200" unit="MB"/>
+   <Job>
+   <Command><![CDATA[
+      setenv cteqx_dat /group/cteqX/peter/fitpack/data/
+      echo $cteqx_dat
+      echo input_fit_C61_e866_gomez | ./tstfit_v1
+   ]]></Command>
+
+   <Output src="*.out" dest="${outdir}/test/*.out"/>
+   <Output src="*.pdf" dest="${outdir}/test/*.pdf"/>
+   <Stdout dest="${outdir}/summary/output_1.log"/>
+   <Stderr dest="${outdir}/summary/outerr_1.log"/>
+
+   </Job>
+
+</Request>

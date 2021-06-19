@@ -1,0 +1,26 @@
+FC=gfortran
+
+F2c =   Apps/pdf10.o \
+	theory/DIS10.o theory/altpar10.o theory/xpij2p.o \
+	theory/xpns2p.o \
+	util/polint.o util/alpha_cwz.o util/libmathlib.a \
+	util/io.o util/trmstr.o \
+	nucl/deuteronSF.o nucl/phi_int2d.o nucl/phi_int3d.o 
+
+F2comp : Apps/F2comp.o $(F2c) 
+	gfortran -g -o ./$@ Apps/F2comp.o $(F2c) 
+
+test_F2c:	
+	make F2comp
+	mv F2comp Apps/F2comp
+	cd Apps/ && ./F2comp > F2comp.out  \
+		 && kdiff3 F2comp.out F2comp.out_test
+
+
+
+
+
+
+
+
+

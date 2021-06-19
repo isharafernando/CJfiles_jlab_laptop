@@ -1,0 +1,15 @@
+'folder'		'Results/Moments'
+'comment'		''
+
+'---- main parameters ---'
+
+ Q2min,  Q2max    nQ2	lin/log
+  2d0    200d0    20	'log'
+
+
+ parfile	CTEQ6X.par	! PDF parameter file
+ ibeam		1		! electron beam
+ istruc		2		! F2 structure fn.
+
+end
+

@@ -1,0 +1,439 @@
+
+###### choice of FORTRAN compiler #########
+
+# Selects the right gfortran compiler call
+ifneq (,$(findstring Bilbo,$(shell uname -n)))
+  FC = gfortran-4.7	# for Alberto
+else
+  FC = gfortran		# for everybody else
+endif
+
+FFLAGS= -O -fno-automatic -ffixed-line-length-132
+
+############  fitpack compilation  #################
+
+##MATHLIB = util/libmathlib.a
+#MATHLIB = util/libmathlib64.a
+##MATHLIB = /site/cernlib/x86_64_rhel5/2005/lib/libmathlib.a
+
+# Selects the right mathlib library
+ifneq (,$(findstring _64,$(shell uname -m)))
+  MATHLIB = util/libmathlib64.a	# for for 64 bits machines
+else
+  MATHLIB = util/libmathlib.a	# for for 32 bits machines
+endif
+
+
+
+NUCL  = nucl/nuke_cteq.o nucl/deuteronSF.o nucl/phi_int2d.o nucl/phi_int3d.o 
+
+NUCL_new  = nucl/nuke_cteq.o nucl/deuteronSF.new.o nucl/phi_int2d.o nucl/phi_int3d.o 
+
+NUCL13  = nucl/nuke_cteq.o nucl/deuteronSF13.o nucl/phi_int2d.o nucl/phi_int3d.o 
+
+NUCL15  = nucl/nuke_cteq.o nucl/deuteronSF15.o nucl/phi_int2d.o nucl/phi_int3d.o nucl/off_shell15.o
+
+OBJS = theory/altpfit02.o theory/theory02_cross.o util/minim.o \
+        theory/altpar02.o util/alpha_cwz.o util/gamma.o \
+        util/trmstr.o util/polint.o nucl/deucor.o theory/jets.o \
+        nucl/nuke_cteq.o theory/gamjet.o util/dkgam.o util/fonfra.o \
+	util/inttochar.o util/io.o
+
+OBJS08 = theory/altpfit08.o \
+	theory/theory08_cross.o theory/altpar08.o \
+	theory/jets.o theory/gamjet.o \
+	nucl/nuke_cteq.o nucl/deuteronSF.o nucl/phi_int2d.o \
+	util/minim.o util/alpha_cwz.o util/gamma.o util/trmstr.o \
+	util/polint.o util/dkgam.o util/fonfra.o util/inttochar.o \
+	util/pinterp.o util/io.o
+
+OBJS08_hix = theory/altpfit08_hix.o \
+	theory/theory08_hix.o theory/altpar08_hix.o \
+	theory/jets.o theory/gamjet.o \
+	util/minim.o util/alpha_cwz.o util/gamma.o util/trmstr.o \
+	util/polint.o util/dkgam.o util/fonfra.o util/inttochar.o \
+	util/pinterp.o util/io.o util/chi2.o 
+
+OBJS08_FL = theory/altpfit08_hix.o \
+	theory/theory08_hix_FL.o theory/altpar08_hix.o \
+	theory/jets.o theory/gamjet.o \
+	nucl/nuke_cteq.o nucl/deuteronSF.o nucl/phi_int2d.o nucl/phi_int3d.o \
+	util/minim.o util/alpha_cwz.o util/gamma.o util/trmstr.o \
+	util/polint.o util/dkgam.o util/fonfra.o util/inttochar.o \
+	util/pinterp.o util/io.o
+
+OBJS10 = theory/altpfit10.o \
+	theory/theory10.o theory/DIS10.o theory/altpar10.o \
+	theory/jets.o theory/gamjet10.o \
+	theory/xpij2p.o theory/xpns2p.o \
+	util/minim10.o util/alpha_cwz.o util/gamma.o util/trmstr.o \
+	util/polint.o util/dkgam.o util/fonfra.o util/inttochar.o \
+	util/pinterp.o util/io.o util/chi2.o \
+	theory/fnt2009.o theory/fn-interface.o theory/cteq61pdf.o \
+	theory/fnt1001.o theory/fnt1002.o theory/fnt2007.o \
+	theory/xsec_w.o theory/xsec_z.o 
+
+OBJS11 = theory/altpar10.o theory/xpij2p.o theory/xpns2p.o \
+	util/polint.o util/alpha_cwz.o util/inttochar.o util/trmstr.o 
+
+OBJS12 = theory/altpfit10.o \
+	theory/theory10.o theory/DIS10.o theory/altpar10.o \
+	theory/jets.o theory/gamjet10.o \
+	theory/xpij2p.o theory/xpns2p.o \
+	util/minim11.o util/alpha_cwz_vmc.o util/gamma.o util/trmstr.o \
+	util/polint.o util/dkgam.o util/fonfra.o util/inttochar.o \
+	util/pinterp.o util/io.o util/chi2.o util/linalg.f\
+	theory/fnt2009.o theory/fn-interface.o theory/cteq61pdf.o \
+	theory/fnt1001.o theory/fnt1002.o theory/fnt2007.o \
+	theory/xsec_w.o theory/xsec_z.o 
+
+OBJS13 = theory/altpfit13.o \
+	theory/theory13.o theory/DIS13.o theory/altpar13.o \
+	theory/jets.o theory/gamjet10.o \
+	theory/xpij2p.o theory/xpns2p.o \
+	util/minim11.o util/alpha_cwz_vmc.o util/gamma.o util/trmstr.o \
+	util/polint.o util/dkgam.o util/fonfra.o util/inttochar.o \
+	util/pinterp.o util/io.o util/chi2.o util/linalg.f\
+	theory/fnt2009.o theory/fn-interface.o theory/cteq61pdf.o \
+	theory/fnt1001.o theory/fnt1002.o theory/fnt2007.o \
+	theory/xsec_w.o theory/xsec_z.o nucl/off_shell.o
+
+OBJS13FL = theory/altpfit13.o \
+	theory/theory13.o theory/DIS13_newFL.o theory/altpar13.o \
+	theory/jets.o theory/gamjet10.o \
+	theory/xpij2p.o theory/xpns2p.o \
+	util/minim11.o util/alpha_cwz_vmc.o util/gamma.o util/trmstr.o \
+	util/polint.o util/dkgam.o util/fonfra.o util/inttochar.o \
+	util/pinterp.o util/io.o util/chi2.o util/linalg.f\
+	theory/fnt2009.o theory/fn-interface.o theory/cteq61pdf.o \
+	theory/fnt1001.o theory/fnt1002.o theory/fnt2007.o \
+	theory/xsec_w.o theory/xsec_z.o nucl/off_shell.o
+
+OBJS13mod = theory/altpfit13.o \
+	theory/theory13.o theory/DIS13_mod.o theory/altpar13.o \
+	theory/jets.o theory/gamjet10.o \
+	theory/xpij2p.o theory/xpns2p.o \
+	util/minim11.o util/alpha_cwz_vmc.o util/gamma.o util/trmstr.o \
+	util/polint.o util/dkgam.o util/fonfra.o util/inttochar.o \
+	util/pinterp.o util/io.o util/chi2.o util/linalg.f\
+	theory/fnt2009.o theory/fn-interface.o theory/cteq61pdf.o \
+	theory/fnt1001.o theory/fnt1002.o theory/fnt2007.o \
+	theory/xsec_w.o theory/xsec_z.o nucl/off_shell.o
+
+OBJS15 = theory/altpfit13.o \
+	theory/theory15.o theory/DIS13.o theory/altpar15.o \
+	theory/jets.o theory/gamjet10.o \
+	theory/xpij2p.o theory/xpns2p.o \
+	util/minim11.o util/alpha_cwz_vmc.o util/gamma.o util/trmstr.o \
+	util/polint.o util/dkgam.o util/fonfra.o util/inttochar.o \
+	util/pinterp.o util/io.o util/chi2.o util/linalg.f\
+	theory/fnt2009.o theory/fn-interface.o theory/cteq61pdf.o \
+	theory/fnt1001.o theory/fnt1002.o theory/fnt2007.o \
+	theory/xsec_w.o theory/xsec_z.o 
+
+#... these are for "fmKP bug" fix - AA October 2015
+OBJS15_aa = theory/altpfit15_aa.o \
+	theory/theory15_aa.o theory/DIS13.o theory/altpar15_aa.o \
+	theory/jets.o theory/gamjet10.o \
+	theory/xpij2p.o theory/xpns2p.o \
+	util/minim15_aa.o util/alpha_cwz_vmc.o util/gamma.o util/trmstr.o \
+	util/polint.o util/dkgam.o util/fonfra.o util/inttochar.o \
+	util/pinterp.o util/io.o util/chi2.o util/linalg.f\
+	theory/fnt2009.o theory/fn-interface.o theory/cteq61pdf.o \
+	theory/fnt1001.o theory/fnt1002.o theory/fnt2007.o \
+	theory/xsec_w.o theory/xsec_z.o 
+NUCL15_aa  = nucl/nuke_cteq.o nucl/deuteronSF15_aa.o nucl/phi_int2d.o nucl/phi_int3d.o nucl/off_shell15_aa.o
+
+#... these are for "fmKP bug" fix - AA October 2015
+OBJS15_aa = theory/altpfit15_aa.o \
+	theory/theory15_aa.o theory/DIS13.o theory/altpar15_aa.o \
+	theory/jets.o theory/gamjet10.o \
+	theory/xpij2p.o theory/xpns2p.o \
+	util/minim15_aa.o util/alpha_cwz_vmc.o util/gamma.o util/trmstr.o \
+	util/polint.o util/dkgam.o util/fonfra.o util/inttochar.o \
+	util/pinterp.o util/io.o util/chi2.o util/linalg.f\
+	theory/fnt2009.o theory/fn-interface.o theory/cteq61pdf.o \
+	theory/fnt1001.o theory/fnt1002.o theory/fnt2007.o \
+	theory/xsec_w.o theory/xsec_z.o 
+NUCL15_aa  = nucl/nuke_cteq.o nucl/deuteronSF15_aa.o nucl/phi_int2d.o nucl/phi_int3d.o nucl/off_shell15_aa.o
+
+tstfit15_aa : $(OBJS15_aa) $(NUCL15_aa) $(MATHLIB) 
+	$(FC) -g -o ./$@ $(FFLAGS) $(OBJS15_aa) $(NUCL15_aa) $(MATHLIB) 
+
+
+#... these are for "current / evol parameters bug" fix - AA October 2015
+OBJS15_bb = theory/altpfit15_bb.o \
+	theory/theory15_bb.o theory/DIS13.o theory/altpar15_bb.o \
+	theory/jets.o theory/gamjet15_bb.o \
+	theory/xpij2p.o theory/xpns2p.o \
+	util/minim15_bb.o util/alpha_cwz_vmc.o util/gamma.o util/trmstr.o \
+	util/polint.o util/dkgam.o util/fonfra.o util/inttochar.o \
+	util/pinterp.o util/io.o util/chi2.o util/linalg.f\
+	theory/fnt2009.o theory/fn-interface.o theory/cteq61pdf.o \
+	theory/fnt1001.o theory/fnt1002.o theory/fnt2007.o \
+	theory/xsec_w_bb.o theory/xsec_z_bb.o 
+NUCL15_bb  = nucl/nuke_cteq.o nucl/deuteronSF15_aa.o nucl/phi_int2d.o nucl/phi_int3d.o nucl/off_shell15_bb.o
+
+tstfit15_bb : $(OBJS15_bb) $(NUCL15_bb) $(MATHLIB) 
+	$(FC) -g -o ./$@ $(FFLAGS) $(OBJS15_bb) $(NUCL15_bb) $(MATHLIB) 
+
+OBJS15_cc = theory/altpfit15_cc.o \
+	theory/theory15_bb.o theory/DIS13.o theory/altpar15_bb.o \
+	theory/jets.o theory/gamjet15_bb.o \
+	theory/xpij2p.o theory/xpns2p.o \
+	util/minim15_bb.o util/alpha_cwz_vmc.o util/gamma.o util/trmstr.o \
+	util/polint.o util/dkgam.o util/fonfra.o util/inttochar.o \
+	util/pinterp.o util/io.o util/chi2.o util/linalg.f\
+	theory/fnt2009.o theory/fn-interface.o theory/cteq61pdf.o \
+	theory/fnt1001.o theory/fnt1002.o theory/fnt2007.o \
+	theory/xsec_w_bb.o theory/xsec_z_bb.o 
+NUCL15_cc  = nucl/nuke_cteq.o nucl/deuteronSF15_cc.o nucl/phi_int2d.o nucl/phi_int3d.o nucl/off_shell15_cc.o
+
+tstfit15_cc : $(OBJS15_cc) $(NUCL15_cc) $(MATHLIB) 
+	$(FC) -g -o ./$@ $(FFLAGS) $(OBJS15_cc) $(NUCL15_cc) $(MATHLIB) 
+
+OBJS15_dd = theory/altpfit15_dd.o \
+	theory/theory15_bb.o theory/DIS13.o theory/altpar15_bb.o \
+	theory/jets.o theory/gamjet15_bb.o \
+	theory/xpij2p.o theory/xpns2p.o \
+	util/minim15_dd.o util/alpha_cwz_vmc.o util/gamma.o util/trmstr.o \
+	util/polint.o util/dkgam.o util/fonfra.o util/inttochar.o \
+	util/pinterp.o util/io.o util/chi2.o util/linalg.f\
+	theory/fnt2009.o theory/fn-interface.o theory/cteq61pdf.o \
+	theory/fnt1001.o theory/fnt1002.o theory/fnt2007.o \
+	theory/xsec_w_bb.o theory/xsec_z_bb.o \
+	Apps/pdf.o
+NUCL15_dd  = nucl/nuke_cteq.o nucl/deuteronSF15_aa.o nucl/phi_int2d.o nucl/phi_int3d.o nucl/off_shell15_bb.o
+
+tstfit15_dd : $(OBJS15_dd) $(NUCL15_dd) $(MATHLIB) 
+	$(FC) -g -o ./$@ $(FFLAGS) $(OBJS15_dd) $(NUCL15_dd) $(MATHLIB) 
+
+
+# CJ15 code compilation
+
+CJ15obj = theory/altpfit15.o \
+	theory/theory15.o theory/DIS13.o theory/altpar15.o \
+	theory/jets.o theory/gamjet15.o \
+	theory/xpij2p.o theory/xpns2p.o \
+	util/minim15.o util/alpha_cwz_vmc.o util/gamma.o util/trmstr.o \
+	util/polint.o util/dkgam.o util/fonfra.o util/inttochar.o \
+	util/pinterp.o util/io.o util/chi2.o util/linalg.f\
+	theory/fnt2009.o theory/fn-interface.o theory/cteq61pdf.o \
+	theory/fnt1001.o theory/fnt1002.o theory/fnt2007.o \
+	theory/xsec_w.o theory/xsec_z.o \
+	Apps/pdf.o
+CJ15nmsrobj = theory/altpfit15.o \
+	theory/theory15.o theory/DIS13.o theory/altpar15_nmsr.o \
+	theory/jets.o theory/gamjet15.o \
+	theory/xpij2p.o theory/xpns2p.o \
+	util/minim15.o util/alpha_cwz_vmc.o util/gamma.o util/trmstr.o \
+	util/polint.o util/dkgam.o util/fonfra.o util/inttochar.o \
+	util/pinterp.o util/io.o util/chi2.o util/linalg.f\
+	theory/fnt2009.o theory/fn-interface.o theory/cteq61pdf.o \
+	theory/fnt1001.o theory/fnt1002.o theory/fnt2007.o \
+	theory/xsec_w.o theory/xsec_z.o \
+	Apps/pdf.o
+CJ15nucl = nucl/nuke_cteq.o nucl/deuteronSF15.o nucl/phi_int2d.o nucl/phi_int3d.o nucl/off_shell15.o
+
+CJ15fit : $(CJ15obj) $(CJ15nucl) $(MATHLIB) 
+	$(FC) -g -o ./$@ $(FFLAGS) $(CJ15obj) $(CJ15nucl) $(MATHLIB) 
+CJ15_nmsr : $(CJ15nmsrobj) $(CJ15nucl) $(MATHLIB) 
+	$(FC) -g -o ./$@ $(FFLAGS) $(CJ15nmsrobj) $(CJ15nucl) $(MATHLIB) 
+
+
+# Development code compilation
+
+obj = theory/altpfit15.o \
+	theory/theory15.o theory/DIS13.o theory/altpar15.o \
+	theory/jets.o theory/gamjet15.o \
+	theory/xpij2p.o theory/xpns2p.o \
+	util/minim15.o util/alpha_cwz_vmc.o util/gamma.o util/trmstr.o \
+	util/polint.o util/dkgam.o util/fonfra.o util/inttochar.o \
+	util/pinterp.o util/io.o util/chi2.o util/linalg.f\
+	theory/fnt2009.o theory/fn-interface.o theory/cteq61pdf.o \
+	theory/fnt1001.o theory/fnt1002.o theory/fnt2007.o \
+	theory/xsec_w.o theory/xsec_z.o \
+	Apps/pdf.o
+
+nucl = nucl/nuke_cteq.o nucl/deuteronSF15.o nucl/phi_int2d.o nucl/phi_int3d.o nucl/off_shell15.o
+
+%.o : %.f90
+	${FC} -c  $<
+	mv $(notdir $@)  util/
+
+tstfit16 : $(obj) $(nucl) $(MATHLIB) 
+	$(FC) -g -o ./$@ $(FFLAGS) $(obj) $(nucl) $(MATHLIB) 
+
+# This is with new alphaS from N.Sato
+tstfit18 : $(obj) $(nucl) $(MATHLIB) util/alphaS.f90
+	$(FC) -g -o ./$@ $(FFLAGS) $(obj) $(nucl) $(MATHLIB) util/alphaS.f90
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#	the following are kept here for historical reasons 
+
+tstfit_cross : $(OBJS)
+	$(FC) -g -o ./$@ $(OBJS)
+
+tstfit_cross_08 : $(OBJS08)
+	$(FC) -g -o ./$@ $(OBJS08)
+
+tstfit_cross_08_hix : $(OBJS08_hix)
+	$(FC) -g -o ./$@ $(OBJS08_hix)
+
+fit_08_hix_test : $(OBJS08_hix_test)
+	$(FC) -g -o ./$@ $(OBJS08_hix_test)
+
+fit_08_FL: $(OBJS08_FL)
+	$(FC) -g -o ./$@ $(OBJS08_FL)
+
+
+#	working compilation commands for teh releases
+
+fit_08_hix : $(OBJS08_hix) $(NUCL)
+	$(FC) -g -o ./$@ $(OBJS08_hix) $(NUCL) 
+
+fit_10_05 : $(OBJS10) $(NUCL) $(MATHLIB)
+	$(FC) -g -o ./$@ $(OBJS10) $(NUCL) $(MATHLIB) 
+
+fit_11_02 : $(OBJS10) $(NUCL) $(MATHLIB)
+	$(FC) -g -o ./$@ $(OBJS10) $(NUCL) $(MATHLIB) 
+
+#	compilation for the mainline code
+
+tstfit10 : $(OBJS10) $(NUCL) $(MATHLIB) 
+	$(FC) -g -o ./$@ $(FFLAGS) $(OBJS10) $(NUCL) $(MATHLIB) 
+
+tstfit11 : $(OBJS12) $(NUCL) $(MATHLIB) 
+	$(FC) -g -o ./$@ $(FFLAGS) $(OBJS12) $(NUCL) $(MATHLIB) 
+
+tstthry : $(OBJS12) $(NUCL) $(MATHLIB) 
+	$(FC) -g -o ./$@ $(FFLAGS) $(OBJS12) $(NUCL) $(MATHLIB) 
+
+tstfit11_nuke : $(OBJS12) $(NUCL_new) $(MATHLIB) 
+	$(FC) -g -o ./$@ $(FFLAGS) $(OBJS12) $(NUCL_new) $(MATHLIB) 
+
+tstfit13_nuke : $(OBJS13) $(NUCL13) $(MATHLIB) 
+	$(FC) -g -o ./$@ $(FFLAGS) $(OBJS13) $(NUCL13) $(MATHLIB) 
+
+tstfit13_nuke_FL : $(OBJS13FL) $(NUCL13) $(MATHLIB) 
+	$(FC) -g -o ./$@ $(FFLAGS) $(OBJS13FL) $(NUCL13) $(MATHLIB) 
+
+tstfit13_nuke_mod : $(OBJS13mod) $(NUCL13) $(MATHLIB) 
+	$(FC) -g -o ./$@ $(FFLAGS) $(OBJS13mod) $(NUCL13) $(MATHLIB) 
+
+tstfit15_nuke : $(OBJS15) $(NUCL15) $(MATHLIB) 
+	$(FC) -g -o ./$@ $(FFLAGS) $(OBJS15) $(NUCL15) $(MATHLIB) 
+
+#... check this one, might not work [AA, 17 May 10]
+
+fillgf10 : theory/fillgf10.o $(OBJS11) $(MATHLIB)
+	$(FC) -g -o ./$@ theory/fillgf10.o $(OBJS11) $(MATHLIB)
+
+
+
+
+
+
+
+
+#############   TESTS of the package   ###############
+
+
+#  	this one is probably historical only, might not work [AA, 17 May 10]
+
+tests:
+	cd fitting && cp input_tst_C61_e866_gomez input.dat; nice -n19 ./tstfit_cross;	
+	cd fitting && cp input_fit_C61_e866_gomez input.dat; nice -n19 ./tstfit_cross;
+	cd fitting && cp input_fit_C61_e866_gomez_GP_cut02 input.dat; nice -n19  ./tstfit_cross;
+	cd fitting && cp input_fit_gamjet_22para_two input.dat; nice -n19 ./tstfit_cross;
+	cd fitting && cp input.fit_C61_e866_gomez_CF_cut02_HT input.dat; nice -n19 ./tstfit_cross;
+
+
+# 	Tests of fitpack_08_hix
+
+test_08: 
+	make fit_08_hix	
+	cp fit_08_hix tests/fitpack08/
+	cd tests/fitpack08 && echo comp.CTEQ6X.dat | nice -19 ./fit_08_hix \
+			   && kdiff3 comp.CTEQ6X.out comp.CTEQ6X.out_test
+
+
+# 	Tests of fitpack_10
+
+v=10
+myroot = tests/fitpack10/
+ifeq ($(v),10_05)
+  myexec = fit_10_05
+else
+  myexec = tstfit10
+endif
+
+quick_test_10:
+	make $(myexec)
+	cp $(myexec) $(myroot) 
+	cd $(myroot) \
+		&& rm -f comp.CTEQ6X.out \
+		&& echo comp.CTEQ6X.dat | nice -19 ./$(myexec) \
+		&& kdiff3 comp.CTEQ6X.out comp.CTEQ6X.out_test &
+
+test_10: 
+	make $(myexec)
+	cp $(myexec) $(myroot) 
+	cd $(myroot) \
+		&& rm -f fit.CTEQ6X_dmc.out fit.CTEQ6X_dmc.par \
+			fit.CTEQ6X_dmc.pdf
+		&& echo fit.CTEQ6X_dmc.dat | nice -19 ./$(myexec) \
+		&& kdiff3 fit.CTEQ6X_dmc.out fit.CTEQ6X_dmc.out_test ;
+	cd $(myroot) \
+		&& rm -f fit.CTEQ6X_free.out fit.CTEQ6X_free.par \
+			fit.CTEQ6X_free.pdf
+		&& echo fit.CTEQ6X_free.dat | nice -19 ./$(myexec) \
+		&& kdiff3 fit.CTEQ6X_free.out fit.CTEQ6X_free.out_test ;
+	cd $(myroot) \
+		&& rm -f fit.CTEQ6X_wba.out fit.CTEQ6X_wba.par \
+			fit.CTEQ6X_wba.pdf
+		&& echo fit.CTEQ6X_wba.dat | nice -19 ./$(myexec) \
+		&& kdiff3 fit.CTEQ6X_wba.out fit.CTEQ6X_wba.out_test ;
+	cd $(myroot) \
+		&& rm -f fit.CTEQ6X_wba_mst.out fit.CTEQ6X_wba_mst.par \
+			fit.CTEQ6X_wba_mst.pdf
+		&& echo fit.CTEQ6X_wba_mst.dat | nice -19 ./$(myexec) \
+		&& kdiff3 fit.CTEQ6X_wba_mst.out fit.CTEQ6X_wba_mst.out_test ;
+
+
+
+
+
+
+
+
+
+
+

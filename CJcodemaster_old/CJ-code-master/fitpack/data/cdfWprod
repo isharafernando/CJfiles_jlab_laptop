@@ -1,0 +1,6 @@
+CDF W-production cross section (nb)
+this is W+ & W- total cross section (22.97+-1.1nb).
+blank
+0.02   : Normalization Uncertainty
+   SqrtS    Tau       ymax  Xsec     Error  Dummy  Kf-ms   Kf-dis
+  1800.00  0.04464    3.0   22.97    1.1     0.0    1.00   1.00

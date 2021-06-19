@@ -1,0 +1,59 @@
+------------------------------
+  F2comp - quick user manual
+------------------------------
+
+INSTALLATION:
+------------
+
+Unzip the package in a folder of your choice. Several subfolders are created:
+
+* Apps/		contains the F2comp.f example, the PDF.f subroutines, the
+		parameter files for the CTEQ6X fits, and a test output file
+* nucl/		computation of F2 for a deuteron target
+* theory/	QCD evolution and structure function subroutines
+* util/ 	some math and i/o subroutines
+
+Before running the code, make sure to define the following environment 
+variables (I assume you are using the bash shell):
+
+  > export cteqx_nucl='/home/.../nucl'
+
+where the ... stand for the path where you put saved your copy of
+fitpack, and it is assumed that the whole package was downloaded in a
+'fitpack' folder. These 2 lines can be placed in your .bashrc file, to
+define the variables in any terminal instance. 
+
+
+COMPILATION:
+-----------
+
+From the top folder:
+
+> make -f makefile_F2comp F2comp
+
+The executable should then be moved in the folder where the .par or .gf 
+files reside.
+
+For a test, move 'F2comp' to 'Apps/', run it as is:
+
+> ./F2comp > test
+
+Compare the results:
+
+> kdiff3 test test.WJC1_onsh
+
+
+QUICK TOUR OF F2comp.f
+----------------------
+
+This program illustrates all the features of the package: 
+- PDF creation from a parameter file (*.par), saving them on a grid file (*.gf)
+- F2 computation on proton and deuterium, and PDF usage from a *.par file
+- PDF usage, starting from a x,Q^2 grid (*.gf)
+
+If the only user's need is to use the PDFs from the provided .gf grid files, 
+only part III of the code is relevant.
+
+
+
+

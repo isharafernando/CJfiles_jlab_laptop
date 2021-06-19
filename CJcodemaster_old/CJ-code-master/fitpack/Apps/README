@@ -1,0 +1,24 @@
+--------------------------
+Apps - folder contents
+--------------------------
+
+(Updated: 26 July 2015)
+
+Applications built on the "stand-alone" CJ framework (can be 
+run independently of the fitting package, using the output .par 
+or .gf files). Need 
+
+
+pdf.f: 	       Decoupled routines for pdf interpolation
+	       input and output of files (.tbl .gf .dat etc.)
+	       This is needed by any application that uses CJ PDFs
+
+pdf10.f:       Older version of pdf.f, used with the CJ12 framework
+
+
+---- OLDER programs --- 
+(not revised to work with CJ15 formats and mods - shoudl work with CJ12 files)
+
+F2comp.f:      Old program to calculate F2 or other structure functions
+
+truncmom.f:    Calulates truncated moments of F2
